@@ -1,0 +1,135 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, .root {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+body, .article {
+  font-family: 'spectral', serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  max-width: 1056px;
+  margin: auto;
+  color: #333333;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 72px;
+}
+
+h1 {
+  font-family: 'work sans', sans-serif;
+  font-size: 4em;
+  font-weight: bold;
+  line-height: 1.06666667em;
+  margin-top: 0.53333333em;
+  margin-bottom: 1.06666666em;
+}
+
+h2 {
+  font-family: 'work sans', sans-serif;
+  font-size: 2.8125em;
+  line-height: 1.06666667em;
+  margin-top: 0.53333333em;
+  margin-bottom: 1.06666666em;
+}
+
+h3 {
+  font-family: 'spectral', serif;
+  font-size: 2em;
+  line-height: 1.5em;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+h4 {
+   font-family: 'spectral', serif;
+  font-size: 1.4375em;
+  line-height: 1.5em;
+  margin-top: 1.04347826em;
+  margin-bottom: 0em;
+}
+
+
+h5 {
+  font-family: 'work sans', sans-serif;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  margin-top: 1.04347826em;
+  margin-bottom: 0em;
+}
+
+p {
+  font-family: 'spectral', serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 0em;
+}
+
+p span {
+  font-family: 'work sans', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 0em;
+  font-weight: bold;
+  font-stretch: expanded;
+}
+
+
+ul {
+  width: 350px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 1em;
+  font-family: 'work sans', sans-serif;
+}
+
+a {
+  color: #333333;
+  font-size: 1em;
+  font-family: 'spectral', serif;
+}
+
+.page-separator {
+  width: 5em;
+  height: 3px;
+  background-color: #DA9218;
+}
+
+footer {
+  background-color: #D7D7D7;
+}
+
+
+/* C4B7AF
+AEABA5
+D9AB9E
+F4CFB5
+E4BAA0 */
+
+
+
+@media screen and (min-width: 320px) and (max-width: 574px) {}
+
+@media screen and (min-width: 575px) and (max-width: 767px) {}
+
+@media screen and (min-width: 768px) and (max-width: 799px) {
+  /*Difference in logo and hero text sizes*/
+}
+
+@media screen and (min-width: 800px) and (max-width: 990px) {}
+
+@media screen and (min-width: 991px) {}
