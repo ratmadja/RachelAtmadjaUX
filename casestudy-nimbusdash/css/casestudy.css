@@ -32,7 +32,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'work sans', sans-serif;
+  font-family: 'spectral', serif;
   font-size: 2.8125em;
   line-height: 1.06666667em;
   margin-top: 0.53333333em;
@@ -72,36 +72,15 @@ p {
   margin-bottom: 0em;
 }
 
-p span {
-  font-family: 'work sans', sans-serif;
-  font-size: 1em;
-  line-height: 1.5em;
-  margin-top: 1.5em;
-  margin-bottom: 0em;
-  font-weight: bold;
-  font-stretch: expanded;
-}
 
-
-ul {
-  width: 300px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-nav a {
+ul li, a {
+  display: inline;
   text-decoration: none;
   color: #333333;
-  font-size: 0.75em;
+  font-size: 1 em;
   font-family: 'work sans', sans-serif;
 }
 
-a {
-  color: #333333;
-  font-size: 1em;
-  font-family: 'spectral', serif;
-}
 
 .page-separator {
   width: 5em;
@@ -109,27 +88,32 @@ a {
   background-color: #DA9218;
 }
 
-footer {
-  background-color: #D7D7D7;
+.container {
+  margin: 72px;
+  display: grid;
+  grid-gap: 0em 1.5em;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 75vh 200px 144px;
 }
 
-
-/* C4B7AF
-AEABA5
-D9AB9E
-F4CFB5
-E4BAA0 */
-
-
-
-@media screen and (min-width: 320px) and (max-width: 574px) {}
-
-@media screen and (min-width: 575px) and (max-width: 767px) {}
-
-@media screen and (min-width: 768px) and (max-width: 799px) {
-  /*Difference in logo and hero text sizes*/
+.casestudy-header {
+  display: flex;
+  flex-direction: column;
 }
 
-@media screen and (min-width: 800px) and (max-width: 990px) {}
+.casestudy-hero {
+  grid-column: 1 / -1;
+  background: url(../assets/heroNimbusdash.jpg) center / cover;
+  height: 77vh;               /*viewport height*/
+}
 
-@media screen and (min-width: 991px) {}
+.casestudy-nav {
+  grid-column: 1 / -1;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  border-bottom: 1px solid #BDBDBD;
+  border-top: 1px solid #BDBDBD;
+}
