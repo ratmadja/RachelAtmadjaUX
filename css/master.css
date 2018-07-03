@@ -8,6 +8,8 @@ html, .root {
 }
 
 body {
+  margin: auto;
+  max-width: 900px;
   font-family: 'spectral', serif;
   font-size: 1em;
   line-height: 1.5em;
@@ -15,116 +17,9 @@ body {
 }
 
 
-/* Start of header styling*/
-
-header {
-  border: 1px solid #c3c3c3;
-  margin: 72px 72px;
-  display: grid;
-  grid-gap: 0em 1.5em;
-  grid-template-columns: repeat(12, 1fr);
-}
-
-.logo {
-  grid-column: 1 / -1;
-  display: flex;
-  justify-content: center;
-}
-
-nav {
-  margin: 24px;
-  grid-column: 5 / -5;
-}
-
-nav .menu {
-  border-bottom: 1px solid #c3c3c3;
-  line-height: 1.5em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 48px;
-}
-
-.menu a {
-  text-decoration: none;
-  color: #333333;
-  font-size: 0.75em;
-  font-family: 'work sans', sans-serif;
-}
-
-.hero-one {
-  border: 1px solid #c3c3c3;
-  grid-column: 1 / -2;
-  height: auto;
-}
-
-.hero-two {
-  border: 1px solid #c3c3c3;
-  grid-column: 1 / 4;
-}
-
-.hero-two p {
-  margin-top: 4px;
-}
-
-.hero-three {
-  border: 1px solid #c3c3c3;
-  grid-column: 4 / -1;
-  margin-top: -16px;
-}
-
-/* End of header styling */
-
-
-
-/* Start of Main Styling */
-
 main {
-  margin: 0px 72px;
+  margin: 0em 4.5em;
 }
-
-.section-work h1 {
-  margin-top: 144px;
-  text-align: center;
-}
-
-.page-separator {
-  margin: auto;
-  margin-bottom: 144px;
-  width: 5em;
-  height: 3px;
-  background-color: #DA9218;
-}
-
-article {
-  margin: 4em 0em;
-  display: grid;
-  grid-gap: 0em 1.5em;
-  grid-template-columns: repeat(12, 1fr);
-}
-
-.work-name {
-  margin-bottom: -60px;
-}
-
-.work-description {
-  border-top: 1px solid #333333;
-  grid-column: 1 / 5;
-}
-
-.work-NimbusDashCover {
-  grid-column: 5 / -1;
-  background: url(../assets/homepage/coverNimbusdash.jpg) no-repeat center;
-  background-size: cover;
-  height: 50vw;
-}
-
-
-
-/* End of Main Styling*/
-
-
-
 
 /* Typography sizes from gridlover */
 
@@ -178,30 +73,240 @@ p {
   margin-bottom: 0em;
 }
 
-p span {
+.work-name {
   font-family: 'work sans', sans-serif;
   font-size: 1em;
   line-height: 1.5em;
   margin-top: 1.5em;
-  margin-bottom: 0em;
+  margin-bottom: -4em;
   font-weight: bold;
   font-stretch: expanded;
 }
 
+/* End of Typography sizes from gridlover */
+
+
+/* Start of header styling*/
+
+header {
+  border: 1px solid #c3c3c3;
+  margin: 4.5em 0em;
+  display: grid;
+  grid-gap: 0em 1.5em;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.logo {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  border: 1px solid #c3c3c3;
+  margin: 1.5em;
+  grid-column: 5 / -5;
+}
+
+nav .menu {
+  border-bottom: 1px solid #c3c3c3;
+  line-height: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 0.75em;
+  font-family: 'work sans', sans-serif;
+}
+
+.hero-one {
+  border: 1px solid #c3c3c3;
+  grid-column: 1 / -2;
+  height: auto;
+}
+
+.hero-two {
+  border: 1px solid #c3c3c3;
+  grid-column: 1 / 4;
+}
+
+.hero-two p {
+  margin-top: 0.25em;
+}
+
+.hero-three {
+  border: 1px solid #c3c3c3;
+  grid-column: 4 / -1;
+  margin-top: -1em;
+}
+
+/* End of header styling */
+
+
+/* Start of main styling */
 
 
 
+.section-title {
+  margin-top: 144px;
+  text-align: center;
+}
 
-footer {
-  background-color: #D7D7D7;
+.page-separator {
+  margin: auto;
+  margin-bottom: 144px;
+  width: 5em;
+  height: 3px;
+  background-color: #DA9218;
+}
+
+/* End of main styling */
+
+/* Start of WORK Styling */
+
+.section-work a {
+  display: block;
+  margin: 1.5em 0em;
+  color: #333333;
+  font-size: 1.1em;
+  font-family: 'spectral', serif;
+}
+
+.section-work {
+  border: 1px solid #c3c3c3;
+}
+
+.work-casestudy {
+  border: 1px solid #c3c3c3;
+  margin: 4em 0em;
+  display: grid;
+  grid-gap: 0em 1.5em;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.work-name {
+  margin-bottom: -3.75em;
+}
+
+.work-description {
+  border-top: 1px solid #333333;
+  grid-column: 1 / 5;
+}
+
+.work-NimbusDashCover {
+  grid-column: 5 / -1;
+  background: url(../assets/homepage/coverNimbusdash.jpg) no-repeat center;
+  background-size: cover;
+  height: 50vw;
+}
+
+/* End of WORK Styling */
+
+
+/* Start of Past Work Styling */
+
+.section-pastwork a {
+  display: block;
+  margin: 1.5em 0em;
+  color: #333333;
+  font-size: 1.1em;
+  font-family: 'spectral', serif;
+}
+
+.section-pastwork {
+  border: 1px solid #c3c3c3;
+  margin: 4em 0em;
+  display: grid;
+  grid-gap: 0em 1.5em;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.pastwork-architecture {
+  grid-column: 1 / 5;
+}
+
+.pastwork-ArchDescription {
+  border-top: 1px solid #333333;
+  height: 40vh;
+}
+
+.pastwork-ArchCover {
+  background: url(../assets/homepage/pastworkArchitecture.jpg) center / cover;
+  height: 20vw;
+}
+
+.pastwork-furniture {
+  border-top: 1px solid #333333;
+  grid-column: 5 / 9;
+}
+
+.pastwork-FurnitureDescription {
+  border-top: 1px solid #333333;
+  height: 40vh;
+}
+
+.pastwork-FurnitureCover {
+  background: url(../assets/homepage/pastworkFurniture.jpg) center / cover;
+  height: 20vw;
+}
+
+.pastwork-graphics {
+  border-top: 1px solid #333333;
+  grid-column: 9 / -1;
+}
+
+.pastwork-GraphicsDescription {
+  border-top: 1px solid #333333;
+  height: 40vh;
+}
+
+.pastwork-GraphicsCover {
+  background: url(../assets/homepage/pastworkGraphics.jpg) center / cover;
+  height: 20vw;
 }
 
 
-/* C4B7AF
-AEABA5
-D9AB9E
-F4CFB5
-E4BAA0 */
+/* End of Past Work Styling */
+
+/* Start of Footer Styling */
+
+footer {
+  background-color: #D7D7D7;
+  padding-left: 3.5em;
+  padding-right: 3.5em;
+  padding-top: 2em;
+  padding-bottom: 4em;
+  display: grid;
+  grid-gap: 0em 1.5em;
+  grid-template-columns: repeat(12, 1fr)
+}
+
+
+footer a {
+  display: inline;
+  font-size: 1em;
+  color: #333333;
+}
+
+.footer-about {
+  grid-column: 1 / 9;
+}
+
+.footer-contact {
+  grid-column: 9 / -1;
+}
+
+
+/* End of Footer Styling */
+
+
+
+
 
 
 
