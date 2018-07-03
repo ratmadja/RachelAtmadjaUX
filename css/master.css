@@ -31,12 +31,6 @@ header {
   justify-content: center;
 }
 
-<<<<<<< HEAD
-
-
-
-/* text-sizes from gridlover */
-=======
 nav {
   margin: 24px;
   grid-column: 5 / -5;
@@ -48,6 +42,7 @@ nav .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 48px;
 }
 
 .menu a {
@@ -85,43 +80,46 @@ nav .menu {
 /* Start of Main Styling */
 
 main {
-  border: 1px solid red;
   margin: 0px 72px;
 }
 
 .section-work h1 {
+  margin-top: 144px;
   text-align: center;
 }
 
 .page-separator {
   margin: auto;
+  margin-bottom: 144px;
   width: 5em;
   height: 3px;
   background-color: #DA9218;
 }
 
 article {
-  border: 1px solid black;
   margin: 4em 0em;
   display: grid;
   grid-gap: 0em 1.5em;
   grid-template-columns: repeat(12, 1fr);
 }
 
+.work-name {
+  margin-bottom: -60px;
+}
+
 .work-description {
-  border: 1px solid red;
-  grid-column: 1 / 4;
+  border-top: 1px solid #333333;
+  grid-column: 1 / 5;
 }
 
 .work-NimbusDashCover {
-  border: 1px solid red;
-  grid-column: 4 / -1;
-  background: url(../assets/homepage/coverNimbusdash.jpg) no-repeat center / cover;
+  grid-column: 5 / -1;
+  background: url(../assets/homepage/coverNimbusdash.jpg) no-repeat center;
+  background-size: cover;
+  height: 50vw;
 }
 
-.imagetest {
-  grid-column: 1 / -1;
-}
+
 
 /* End of Main Styling*/
 
@@ -129,7 +127,6 @@ article {
 
 
 /* Typography sizes from gridlover */
->>>>>>> 02Responsive
 
 h1 {
   font-family: 'work sans', sans-serif;
@@ -200,15 +197,11 @@ footer {
 }
 
 
-
-
-
-
-
-
-
-
-
+/* C4B7AF
+AEABA5
+D9AB9E
+F4CFB5
+E4BAA0 */
 
 
 
