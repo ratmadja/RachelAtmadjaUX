@@ -7,20 +7,123 @@ html, .root {
   line-height: 24px;
 }
 
-body, .article {
+body {
   font-family: 'spectral', serif;
   font-size: 1em;
   line-height: 1.5em;
-  max-width: 1056px;
-  margin: auto;
   color: #333333;
 }
 
+
+/* Start of header styling*/
+
+header {
+  border: 1px solid #c3c3c3;
+  margin: 72px 72px;
+  display: grid;
+  grid-gap: 0em 1.5em;
+  grid-template-columns: repeat(12, 1fr);
+}
+
 .logo {
+  grid-column: 1 / -1;
   display: flex;
   justify-content: center;
-  margin: 72px;
 }
+
+nav {
+  margin: 24px;
+  grid-column: 5 / -5;
+}
+
+nav .menu {
+  border-bottom: 1px solid #c3c3c3;
+  line-height: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 0.75em;
+  font-family: 'work sans', sans-serif;
+}
+
+.hero-one {
+  border: 1px solid #c3c3c3;
+  grid-column: 1 / -2;
+  height: auto;
+}
+
+.hero-two {
+  border: 1px solid #c3c3c3;
+  grid-column: 1 / 4;
+}
+
+.hero-two p {
+  margin-top: 4px;
+}
+
+.hero-three {
+  border: 1px solid #c3c3c3;
+  grid-column: 4 / -1;
+  margin-top: -16px;
+}
+
+/* End of header styling */
+
+
+
+/* Start of Main Styling */
+
+main {
+  border: 1px solid red;
+  margin: 0px 72px;
+}
+
+.section-work h1 {
+  text-align: center;
+}
+
+.page-separator {
+  margin: auto;
+  width: 5em;
+  height: 3px;
+  background-color: #DA9218;
+}
+
+article {
+  border: 1px solid black;
+  margin: 4em 0em;
+  display: grid;
+  grid-gap: 0em 1.5em;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.work-description {
+  border: 1px solid red;
+  grid-column: 1 / 4;
+}
+
+.work-NimbusDashCover {
+  border: 1px solid red;
+  grid-column: 4 / -1;
+  background: url(../assets/homepage/coverNimbusdash.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.imagetest {
+  grid-column: 1 / -1;
+}
+
+/* End of Main Styling*/
+
+
+
+
+/* Typography sizes from gridlover */
 
 h1 {
   font-family: 'work sans', sans-serif;
@@ -83,31 +186,8 @@ p span {
 }
 
 
-ul {
-  width: 300px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-}
 
-nav a {
-  text-decoration: none;
-  color: #333333;
-  font-size: 0.75em;
-  font-family: 'work sans', sans-serif;
-}
 
-a {
-  color: #333333;
-  font-size: 1em;
-  font-family: 'spectral', serif;
-}
-
-.page-separator {
-  width: 5em;
-  height: 3px;
-  background-color: #DA9218;
-}
 
 footer {
   background-color: #D7D7D7;
