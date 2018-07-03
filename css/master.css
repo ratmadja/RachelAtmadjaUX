@@ -8,20 +8,22 @@ html, .root {
 }
 
 body {
-  margin: auto;
-  max-width: 900px;
   font-family: 'spectral', serif;
   font-size: 1em;
   line-height: 1.5em;
   color: #333333;
 }
 
+.container {
+  margin: auto;
+  max-width: 1200px;
+}
 
 main {
   margin: 0em 4.5em;
 }
 
-/* Typography sizes from gridlover */
+/* Start of typography sizes */
 
 h1 {
   font-family: 'work sans', sans-serif;
@@ -83,7 +85,7 @@ p {
   font-stretch: expanded;
 }
 
-/* End of Typography sizes from gridlover */
+/* End of typography sizes */
 
 
 /* Start of header styling*/
@@ -153,13 +155,13 @@ nav .menu {
 
 
 .section-title {
-  margin-top: 144px;
+  margin-top: 3em;
   text-align: center;
 }
 
 .page-separator {
   margin: auto;
-  margin-bottom: 144px;
+  margin-bottom: 9em;
   width: 5em;
   height: 3px;
   background-color: #DA9218;
@@ -183,7 +185,7 @@ nav .menu {
 
 .work-casestudy {
   border: 1px solid #c3c3c3;
-  margin: 4em 0em;
+  margin-top: 4em;
   display: grid;
   grid-gap: 0em 1.5em;
   grid-template-columns: repeat(12, 1fr);
@@ -220,7 +222,8 @@ nav .menu {
 
 .section-pastwork {
   border: 1px solid #c3c3c3;
-  margin: 4em 0em;
+  margin-top: 4em;
+  margin-bottom: 9em;
   display: grid;
   grid-gap: 0em 1.5em;
   grid-template-columns: repeat(12, 1fr);
@@ -277,10 +280,7 @@ nav .menu {
 
 footer {
   background-color: #D7D7D7;
-  padding-left: 3.5em;
-  padding-right: 3.5em;
-  padding-top: 2em;
-  padding-bottom: 4em;
+  padding: 2em 4.5em;
   display: grid;
   grid-gap: 0em 1.5em;
   grid-template-columns: repeat(12, 1fr)
