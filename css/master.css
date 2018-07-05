@@ -591,8 +591,10 @@ footer a {
   }
   .ralogo {
     background: url(../assets/homepage/ralogo24.svg) center / cover;
-    height: 24px;
-    width: 38px;
+    height: 36px;
+    width: 57px;
+    /* height: 24px;
+    width: 38px; */
   }
   .hero-image {
     margin: 1em 0em;
@@ -708,25 +710,28 @@ footer a {
     margin-bottom: 6em;
   }
   main {
-    margin: 0em 3em;
+    margin: 0em 1.5em;
   }
   header {
-    margin-top: 3em;
+    margin-top: 2em;
   }
   nav {   /* Modified from 450-574px */
     margin-top: 1.5em;
-    width: 180px;
+    width: 14em;
   }
   nav .menu {   /* Modified from 450-574px */
-    line-height: 1.2em;
+    line-height: 1.5em;
   }
   .menu a {   /* Modified from 450-574px */
-    font-size: 0.6em;
+    font-size: 0.75em;
   }
   .ralogo {
     background: url(../assets/homepage/ralogo24.svg) center / cover;
+    height: 36px;
+    width: 57px;
+    /* background: url(../assets/homepage/ralogo24.svg) center / cover;
     height: 24px;
-    width: 38px;
+    width: 38px; */
   }
 
   .hero-image {    /* Modified from 450-574px */
