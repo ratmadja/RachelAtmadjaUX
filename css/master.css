@@ -239,7 +239,17 @@ nav .menu {
   height: 50vw;
 }
 
+/* Start of code for pointer for cover div */
 
+.work-NimbusDashCover:hover {
+  cursor: pointer;
+}
+
+.work-NimbusLandingCover:hover {
+  cursor: pointer;
+}
+
+/* Start of code for pointer for cover div */
 
 
 /* Start of Past Work Styling */
