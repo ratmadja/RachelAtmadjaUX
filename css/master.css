@@ -111,7 +111,7 @@ nav {
 }
 
 nav .menu {
-  border-bottom: 1px solid #c3c3c3;
+  border-bottom: 1px solid #E6E6E6;
   line-height: 1.5em;
   display: flex;
   justify-content: space-between;
@@ -119,14 +119,21 @@ nav .menu {
 }
 
 .menu a {
+  /* border: 1px solid red; */
+  padding-bottom: 0.45em;
   text-decoration: none;
   color: #333333;
   font-size: 0.75em;
   font-family: 'work sans', sans-serif;
 }
 
+.menu a:hover {
+  border-bottom: 1px solid #DA9218;
+  margin-bottom: 1em;
+}
+
 .hero-image {
-  border: 1px solid #c3c3c3;
+  /* border: 1px solid #c3c3c3; */
   margin: 4.5em 0em;
   display: grid;
   grid-gap: 0em 1.5em;
@@ -159,7 +166,7 @@ nav .menu {
 
 
 .section-title {
-  border: 1px solid #c3c3c3
+  /* border: 1px solid #c3c3c3 */
   margin-top: 3em;
   text-align: center;
 }
@@ -176,21 +183,25 @@ nav .menu {
 
 /* Start of WORK Styling */
 
-.section-work a {
-  display: block;
+.worklink {
+  display: inline-block;
   margin: 1.5em 0em;
   color: #333333;
   font-size: 1.1em;
   font-family: 'spectral', serif;
 }
 
+.worklink:hover {
+  background-color: #DA9218;
+}
+
 .section-work {
-  border: 1px solid #c3c3c3;
+  /* border: 1px solid grey; */
   margin-top: 9em;
 }
 
 .work-casestudy {
-  border: 1px solid #c3c3c3;
+  /* border: 1px solid red; */
   margin-top: 4em;
   display: grid;
   grid-gap: 0em 1.5em;
@@ -233,16 +244,16 @@ nav .menu {
 
 /* Start of Past Work Styling */
 
-.section-pastwork a {
-  display: block;
+.worklink {
+  display: inline-block;
   margin: 1.5em 0em;
   color: #333333;
-  font-size: 1.1em;
+  font-size: 1em;
   font-family: 'spectral', serif;
 }
 
 .section-pastwork {
-  border: 1px solid #c3c3c3;
+  /* border: 1px solid #c3c3c3; */
   margin-top: 4em;
   margin-bottom: 9em;
   display: grid;
@@ -255,9 +266,8 @@ nav .menu {
 }
 
 .pastwork-architecture {
-  border: 1px solid #c3c3c3;
+  /* border: 1px solid #c3c3c3; */
   grid-column: 1 / 5;
-
 }
 
 .pastwork-ArchDescription {
@@ -271,7 +281,7 @@ nav .menu {
 }
 
 .pastwork-furniture {
-  border: 1px solid #c3c3c3;
+  /* border: 1px solid #c3c3c3; */
   grid-column: 5 / 9;
 }
 
@@ -286,7 +296,7 @@ nav .menu {
 }
 
 .pastwork-graphics {
-  border: 1px solid #c3c3c3;
+  /* border: 1px solid #c3c3c3; */
   grid-column: 9 / -1;
 }
 
@@ -369,10 +379,11 @@ footer a {
     margin: 0em 3em;
   }
   header {
-    margin: 3em;
+    /* border: 1px solid red; */
+    margin-top: 3em;
   }
   nav {
-    margin: 1em;
+    margin-top: 1.5em;
   }
   .ralogo {
     background: url(../assets/homepage/ralogo36.svg) center / cover;
@@ -380,15 +391,23 @@ footer a {
     width: 57px;
   }
   .hero-image {
+    /* border: 1px solid #c3c3c3; */
     margin: 3em 0em;
   }
-  /* .hero-one h3{
+  .hero-one h3{
     font-family: 'spectral', serif;
     font-size: 1.4375em;
     line-height: 1.5em;
     margin-top: 1.04347826em;
     margin-bottom: 0em;
-  } */
+  }
+  .work-description h3{
+    font-family: 'spectral', serif;
+    font-size: 1.4375em;
+    line-height: 1.5em;
+    margin-top: 1.04347826em;
+    margin-bottom: 0em;
+  }
   .hero-two p {
     font-size: 0.9em;
   }
@@ -433,8 +452,8 @@ footer a {
   }
 }
 
-/* @media screen and (min-width: 768px) and (max-width: 799px) {
-} */
+
+/* @media screen and (min-width: 768px) and (max-width: 799px) {} */
 
 
 @media screen and (min-width: 575px) and (max-width: 767px) {
@@ -442,11 +461,115 @@ footer a {
   .container {
     border: 1px solid red;
   }
+  .casestudy-scope {
+    display: none;
+  }
+  main {
+    margin: 0em 3em;
+  }
+  header {
+    /* border: 1px solid red; */
+    margin-top: 3em;
+  }
+  nav {
+    margin-top: 1.5em;
+  }
+  .ralogo {
+    background: url(../assets/homepage/ralogo36.svg) center / cover;
+    height: 36px;
+    width: 57px;
+  }
+  .hero-image {
+    margin: 1em 0em;
+  }
+  .hero-one h3{
+    font-family: 'spectral', serif;
+    font-size: 1.4375em;
+    line-height: 1.5em;
+    margin-top: 1.04347826em;
+    margin-bottom: 0em;
+  }
+  .work-description h3{
+    font-family: 'spectral', serif;
+    font-size: 1.4375em;
+    line-height: 1.5em;
+    margin-top: 1.04347826em;
+    margin-bottom: 0em;
+  }
+  .hero-two p {
+    font-size: 1em;
+  }
+  .hero-one {
+    grid-column: 1 / -1;
+  }
+  .hero-two {
+    margin-top: 2em;
+    grid-column: 1 / 5;
+    order: 1;
+  }
+  .hero-three {
+    margin-top: 1em;
+    grid-column: 1 / -1;
+  }
+  .section-title {
+    font-family: 'work sans', sans-serif;
+    font-size: 2.8125em;
+    line-height: 1.06666667em;
+    margin-top: 3em;
+    margin-bottom: 1.06666666em;
+  }
+
+  /* adjusted case study to vertical orientation */
+
+  .work-description {
+    grid-column: 1 / -1;
+  }
+  .work-NimbusDashCover {
+    grid-column: 1 / -1;
+    background: url(../assets/homepage/coverNimbusdashCentered.jpg) no-repeat center;
+    background-size: cover;
+    height: 70vw;
+  }
+  .work-NimbusLandingCover {
+    grid-column: 1 / -1;
+    background: url(../assets/homepage/coverNimbusLandingCentered.jpg) no-repeat center;
+    background-size: cover;
+    height: 70vw;
+  }
+
+  /* adjusted case study to vertical orientation */
+
+  .section-pastwork a{
+    font-size: 1em;
+  }
+  .pastwork-architecture,
+  .pastwork-furniture,
+  .pastwork-graphics {
+    grid-column: 1 / -1;
+    margin-bottom: 4.5em;
+    display: grid;
+    grid-gap: 1.5em;
+    grid-template-columns: repeat(12, 1fr)
+  }
+  .pastwork-ArchDescription,
+  .pastwork-FurnitureDescription,
+  .pastwork-GraphicsDescription {
+    grid-column: 1 / 7;
+  }
+  .pastwork-ArchCover,
+  .pastwork-FurnitureCover,
+  .pastwork-GraphicsCover {
+    grid-column: 7 / -1;
+    height: 45vh;
+  }
+  footer li {
+    display: block;
+  }
 
 }
 
 
-@media screen and (min-width: 320px) and (max-width: 574px) {
+@media screen and (min-width: 450px) and (max-width: 574px) {
 
   .container {
     border: 1px solid green;
@@ -456,11 +579,370 @@ footer a {
     display: none;
   }
   main {
-    margin: 0em 1.5em;
+    margin: 0em 3em;
+  }
+  header {
+    /* border: 1px solid red; */
+    margin-top: 3em;
+  }
+  nav {me
+    margin-top: 1.5em;
   }
   .ralogo {
     background: url(../assets/homepage/ralogo24.svg) center / cover;
     height: 24px;
     width: 38px;
   }
+  .hero-image {
+    margin: 1em 0em;
+  }
+  .hero-one h3{
+    font-family: 'spectral', serif;
+    font-size: 1.4375em;
+    line-height: 1.5em;
+    margin-top: 1.04347826em;
+    margin-bottom: 0em;
+  }
+  .hero-three h4 {
+    font-family: 'spectral', serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 0em;
+  }
+  .work-description h3{
+    font-family: 'spectral', serif;
+    font-size: 1.4375em;
+    line-height: 1.5em;
+    margin-top: 1.04347826em;
+    margin-bottom: 0em;
+  }
+  .hero-two p {
+    font-size: 1em;
+  }
+  .hero-one {
+    grid-column: 1 / -1;
+  }
+  .hero-two {
+    margin-top: 2em;
+    grid-column: 1 / -1;
+    order: 1;
+  }
+  .hero-three {
+    margin-top: 1em;
+    grid-column: 1 / -1;
+  }
+  .section-title {
+    font-family: 'work sans', sans-serif;
+    font-size: 2.8125em;
+    line-height: 1.06666667em;
+    margin-top: 3em;
+    margin-bottom: 1.06666666em;
+  }
+
+  /* adjusted case study to vertical orientation */
+
+  .work-description {
+    grid-column: 1 / -1;
+  }
+  .work-NimbusDashCover {
+    grid-column: 1 / -1;
+    background: url(../assets/homepage/coverNimbusdashCentered.jpg) no-repeat center;
+    background-size: cover;
+    height: 70vw;
+  }
+  .work-NimbusLandingCover {
+    grid-column: 1 / -1;
+    background: url(../assets/homepage/coverNimbusLandingCentered.jpg) no-repeat center;
+    background-size: cover;
+    height: 70vw;
+  }
+
+  /* adjusted case study to vertical orientation */
+
+  .section-pastwork a{
+    font-size: 1em;
+  }
+  .pastwork-architecture,
+  .pastwork-furniture,
+  .pastwork-graphics {
+    grid-column: 1 / -1;
+    margin-bottom: 4.5em;
+    display: grid;
+    grid-gap: 1.5em;
+    grid-template-columns: repeat(12, 1fr)
+  }
+  .pastwork-ArchDescription,
+  .pastwork-FurnitureDescription,
+  .pastwork-GraphicsDescription {
+    grid-column: 1 / 7;
+  }
+  .pastwork-ArchCover,
+  .pastwork-FurnitureCover,
+  .pastwork-GraphicsCover {
+    grid-column: 7 / -1;
+    height: 45vh;
+  }
+  footer li {
+    display: block;
+  }
+}
+
+
+@media screen and (min-width: 450px) and (max-width: 574px) {
+
+  .container {
+    border: 1px solid green;
+  }
+
+  .casestudy-scope {
+    display: none;
+  }
+  main {
+    margin: 0em 3em;
+  }
+  header {
+    /* border: 1px solid red; */
+    margin-top: 3em;
+  }
+  nav {me
+    margin-top: 1.5em;
+  }
+  .ralogo {
+    background: url(../assets/homepage/ralogo24.svg) center / cover;
+    height: 24px;
+    width: 38px;
+  }
+
+  .hero-image {
+    margin: 1em 0em;
+  }
+  .hero-one h3{
+    font-family: 'spectral', serif;
+    font-size: 1.4375em;
+    line-height: 1.5em;
+    margin-top: 1.04347826em;
+    margin-bottom: 0em;
+  }
+  .hero-three h4 {
+    font-family: 'spectral', serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 0em;
+  }
+  .work-description h3{
+    font-family: 'spectral', serif;
+    font-size: 1.4375em;
+    line-height: 1.5em;
+    margin-top: 1.04347826em;
+    margin-bottom: 0em;
+  }
+  .hero-two p {
+    font-size: 1em;
+  }
+  .hero-one {
+    grid-column: 1 / -1;
+  }
+  .hero-two {
+    margin-top: 2em;
+    grid-column: 1 / -1;
+    order: 1;
+  }
+  .hero-three {
+    margin-top: 1em;
+    grid-column: 1 / -1;
+  }
+  .section-title {
+    font-family: 'work sans', sans-serif;
+    font-size: 2.8125em;
+    line-height: 1.06666667em;
+    margin-top: 3em;
+    margin-bottom: 1.06666666em;
+  }
+
+  /* adjusted case study to vertical orientation */
+
+  .work-description {
+    grid-column: 1 / -1;
+  }
+  .work-NimbusDashCover {
+    grid-column: 1 / -1;
+    background: url(../assets/homepage/coverNimbusdashCentered.jpg) no-repeat center;
+    background-size: cover;
+    height: 70vw;
+  }
+  .work-NimbusLandingCover {
+    grid-column: 1 / -1;
+    background: url(../assets/homepage/coverNimbusLandingCentered.jpg) no-repeat center;
+    background-size: cover;
+    height: 70vw;
+  }
+
+  /* adjusted case study to vertical orientation */
+
+  .section-pastwork a{
+    font-size: 1em;
+  }
+  .pastwork-architecture,
+  .pastwork-furniture,
+  .pastwork-graphics {
+    grid-column: 1 / -1;
+    margin-bottom: 4.5em;
+    display: grid;
+    grid-gap: 1.5em;
+    grid-template-columns: repeat(12, 1fr)
+  }
+  .pastwork-ArchDescription,
+  .pastwork-FurnitureDescription,
+  .pastwork-GraphicsDescription {
+    grid-column: 1 / -1;
+    height: 40vh;
+  }
+  .pastwork-ArchCover,
+  .pastwork-FurnitureCover,
+  .pastwork-GraphicsCover {
+    grid-column: 1 / -1;
+    height: 45vh;
+  }
+  footer li {
+    display: block;
+  }
+
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 449px) {
+
+  .container {
+    border: 1px solid purple;
+  }
+
+  .casestudy-scope {
+    display: none;
+  }
+
+  .section-work {   /* Controls spacing above first casestudy*/
+    margin-top: 9em;
+  }
+  .page-separator {   /* Modified from 450-574px */
+    margin-bottom: 6em;
+  }
+  main {
+    margin: 0em 3em;
+  }
+  header {
+    margin-top: 3em;
+  }
+  nav {   /* Modified from 450-574px */
+    margin-top: 1.5em;
+    width: 180px;
+  }
+  nav .menu {   /* Modified from 450-574px */
+    line-height: 1.2em;
+  }
+  .menu a {   /* Modified from 450-574px */
+    font-size: 0.6em;
+  }
+  .ralogo {
+    background: url(../assets/homepage/ralogo24.svg) center / cover;
+    height: 24px;
+    width: 38px;
+  }
+
+  .hero-image {    /* Modified from 450-574px */
+    margin: 0em 0em;
+  }
+  .hero-one h3{     /* Modified from 450-574px */
+    font-family: 'spectral', serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 0em;
+  }
+  .hero-three h4 {
+    font-family: 'spectral', serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 0em;
+  }
+  .work-description h3{
+    font-family: 'spectral', serif;
+    font-size: 1.4375em;
+    line-height: 1.5em;
+    margin-top: 1.04347826em;
+    margin-bottom: 0em;
+  }
+  .hero-two p {
+    font-size: 1em;
+  }
+  .hero-one {
+    grid-column: 1 / -1;
+  }
+  .hero-two {
+    margin-top: 2em;
+    grid-column: 1 / -1;
+    order: 1;
+  }
+  .hero-three {
+    margin-top: 1em;
+    grid-column: 1 / -1;
+  }
+  .section-title {
+    font-family: 'work sans', sans-serif;
+    font-size: 2.8125em;
+    line-height: 1.06666667em;
+    margin-top: 3em;
+    margin-bottom: 1.06666666em;
+  }
+
+  /* adjusted case study to vertical orientation */
+
+  .work-description {
+    grid-column: 1 / -1;
+  }
+  .work-NimbusDashCover {
+    grid-column: 1 / -1;
+    background: url(../assets/homepage/coverNimbusdashCentered.jpg) no-repeat center;
+    background-size: cover;
+    height: 70vw;
+  }
+  .work-NimbusLandingCover {
+    grid-column: 1 / -1;
+    background: url(../assets/homepage/coverNimbusLandingCentered.jpg) no-repeat center;
+    background-size: cover;
+    height: 70vw;
+  }
+
+  /* adjusted case study to vertical orientation */
+
+  .section-pastwork a{
+    font-size: 1em;
+  }
+  .pastwork-architecture,
+  .pastwork-furniture,
+  .pastwork-graphics {
+    grid-column: 1 / -1;
+    margin-bottom: 4.5em;
+    display: grid;
+    grid-gap: 1.5em;
+    grid-template-columns: repeat(12, 1fr)
+  }
+  .pastwork-ArchDescription,
+  .pastwork-FurnitureDescription,
+  .pastwork-GraphicsDescription {
+    grid-column: 1 / -1;
+    height: 40vh;
+  }
+  .pastwork-ArchCover,
+  .pastwork-FurnitureCover,
+  .pastwork-GraphicsCover {
+    grid-column: 1 / -1;
+    height: 45vh;
+  }
+  footer li {
+    display: block;
+  }
+
 }
