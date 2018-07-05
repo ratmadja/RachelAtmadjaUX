@@ -670,12 +670,13 @@ footer a {
   .pastwork-ArchDescription,
   .pastwork-FurnitureDescription,
   .pastwork-GraphicsDescription {
-    grid-column: 1 / 7;
+    grid-column: 1 / -1;
+    height: 40vh;
   }
   .pastwork-ArchCover,
   .pastwork-FurnitureCover,
   .pastwork-GraphicsCover {
-    grid-column: 7 / -1;
+    grid-column: 1 / -1;
     height: 45vh;
   }
   footer li {
