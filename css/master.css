@@ -873,15 +873,17 @@ footer a {
   }
   .hero-one {
     grid-column: 1 / -1;
+    order: 1;
   }
   .hero-two {
     margin-top: 2em;
     grid-column: 1 / -1;
-    order: 1;
+    order: 3;
   }
   .hero-three {
     margin-top: 1em;
     grid-column: 1 / -1;
+    order: 2;
   }
   .section-title {
     font-family: 'work sans', sans-serif;
