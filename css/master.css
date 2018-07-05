@@ -272,7 +272,7 @@ nav .menu {
 
 .pastwork-ArchDescription {
   border-top: 1px solid #333333;
-  height: 45vh;
+  height: 17em;
 }
 
 .pastwork-ArchCover {
@@ -287,7 +287,7 @@ nav .menu {
 
 .pastwork-FurnitureDescription {
   border-top: 1px solid #333333;
-  height: 45vh;
+  height: 17em;
 }
 
 .pastwork-FurnitureCover {
@@ -302,7 +302,7 @@ nav .menu {
 
 .pastwork-GraphicsDescription {
   border-top: 1px solid #333333;
-  height: 45vh;
+  height: 17em;
 }
 
 .pastwork-GraphicsCover {
@@ -814,7 +814,7 @@ footer a {
   .pastwork-FurnitureDescription,
   .pastwork-GraphicsDescription {
     grid-column: 1 / -1;
-    height: 40vh;
+    height: 60vw;
   }
   .pastwork-ArchCover,
   .pastwork-FurnitureCover,
