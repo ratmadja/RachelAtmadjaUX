@@ -523,13 +523,13 @@ footer a {
   .work-NimbusDashCover {
     grid-column: 1 / -1;
     background: url(../assets/homepage/coverNimbusDashCentered.jpg) no-repeat center;
-    background-size: cover;
+    background-size: contain;
     height: 70vw;
   }
   .work-NimbusLandingCover {
     grid-column: 1 / -1;
     background: url(../assets/homepage/coverNimbusLandingCentered.jpg) no-repeat center;
-    background-size: cover;
+    background-size: contain;
     height: 70vw;
   }
 
@@ -643,13 +643,13 @@ footer a {
   .work-NimbusDashCover {
     grid-column: 1 / -1;
     background: url(../assets/homepage/coverNimbusDashCentered.jpg) no-repeat center;
-    background-size: cover;
+    background-size: contain;
     height: 70vw;
   }
   .work-NimbusLandingCover {
     grid-column: 1 / -1;
     background: url(../assets/homepage/coverNimbusLandingCentered.jpg) no-repeat center;
-    background-size: cover;
+    background-size: contain;
     height: 70vw;
   }
 
@@ -670,14 +670,15 @@ footer a {
   .pastwork-ArchDescription,
   .pastwork-FurnitureDescription,
   .pastwork-GraphicsDescription {
+    /* border: 1px solid green; */
     grid-column: 1 / -1;
-    height: 40vh;
+    height: 50vw;
   }
   .pastwork-ArchCover,
   .pastwork-FurnitureCover,
   .pastwork-GraphicsCover {
     grid-column: 1 / -1;
-    height: 45vh;
+    height: 60vw;
   }
   footer li {
     display: block;
@@ -779,13 +780,13 @@ footer a {
   .work-NimbusDashCover {
     grid-column: 1 / -1;
     background: url(../assets/homepage/coverNimbusDashCentered.jpg) no-repeat center;
-    background-size: cover;
+    background-size: contain;
     height: 70vw;
   }
   .work-NimbusLandingCover {
     grid-column: 1 / -1;
     background: url(../assets/homepage/coverNimbusLandingCentered.jpg) no-repeat center;
-    background-size: cover;
+    background-size: contain;
     height: 70vw;
   }
 
@@ -813,7 +814,8 @@ footer a {
   .pastwork-FurnitureCover,
   .pastwork-GraphicsCover {
     grid-column: 1 / -1;
-    height: 45vh;
+    background-position: cover;
+    height: 50vw;
   }
   footer li {
     display: block;
