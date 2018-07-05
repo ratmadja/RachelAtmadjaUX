@@ -431,7 +431,7 @@ footer a {
   .pastwork-furniture,
   .pastwork-graphics {
     grid-column: 1 / -1;
-    margin-bottom: 4.5em;
+    margin-bottom: 2em;
     display: grid;
     grid-gap: 1.5em;
     grid-template-columns: repeat(12, 1fr)
@@ -548,7 +548,7 @@ footer a {
   .pastwork-furniture,
   .pastwork-graphics {
     grid-column: 1 / -1;
-    margin-bottom: 4.5em;
+    margin-bottom: 2em;
     display: grid;
     grid-gap: 1.5em;
     grid-template-columns: repeat(12, 1fr)
