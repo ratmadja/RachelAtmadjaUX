@@ -452,7 +452,6 @@ footer a {
   }
 }
 
-
 @media screen and (min-width: 575px) and (max-width: 767px) {
 
   .container {
@@ -682,128 +681,6 @@ footer a {
   footer li {
     display: block;
   }
-}
-
-@media screen and (min-width: 450px) and (max-width: 574px) {
-
-  .container {
-    border: 1px solid green;
-  }
-
-  .casestudy-scope {
-    display: none;
-  }
-  main {
-    margin: 0em 3em;
-  }
-  header {
-    /* border: 1px solid red; */
-    margin-top: 3em;
-  }
-  nav {me
-    margin-top: 1.5em;
-  }
-  .ralogo {
-    background: url(../assets/homepage/ralogo24.svg) center / cover;
-    height: 24px;
-    width: 38px;
-  }
-
-  .hero-image {
-    margin: 1em 0em;
-  }
-  .hero-one h3{
-    font-family: 'spectral', serif;
-    font-size: 1.4375em;
-    line-height: 1.5em;
-    margin-top: 1.04347826em;
-    margin-bottom: 0em;
-  }
-  .hero-three h4 {
-    font-family: 'spectral', serif;
-    font-size: 1em;
-    line-height: 1.5em;
-    margin-top: 1.5em;
-    margin-bottom: 0em;
-  }
-  .work-description h3{
-    font-family: 'spectral', serif;
-    font-size: 1.4375em;
-    line-height: 1.5em;
-    margin-top: 1.04347826em;
-    margin-bottom: 0em;
-  }
-  .hero-two p {
-    font-size: 1em;
-  }
-  .hero-one {
-    grid-column: 1 / -1;
-  }
-  .hero-two {
-    margin-top: 2em;
-    grid-column: 1 / -1;
-    order: 1;
-  }
-  .hero-three {
-    margin-top: 1em;
-    grid-column: 1 / -1;
-  }
-  .section-title {
-    font-family: 'work sans', sans-serif;
-    font-size: 2.8125em;
-    line-height: 1.06666667em;
-    margin-top: 3em;
-    margin-bottom: 1.06666666em;
-  }
-
-  /* adjusted case study to vertical orientation */
-
-  .work-description {
-    grid-column: 1 / -1;
-  }
-  .work-NimbusDashCover {
-    grid-column: 1 / -1;
-    background: url(../assets/homepage/coverNimbusDashCentered.jpg) no-repeat center;
-    background-size: cover;
-    height: 70vw;
-  }
-  .work-NimbusLandingCover {
-    grid-column: 1 / -1;
-    background: url(../assets/homepage/coverNimbusLandingCentered.jpg) no-repeat center;
-    background-size: cover;
-    height: 70vw;
-  }
-
-  /* adjusted case study to vertical orientation */
-
-  .section-pastwork a{
-    font-size: 1em;
-  }
-  .pastwork-architecture,
-  .pastwork-furniture,
-  .pastwork-graphics {
-    grid-column: 1 / -1;
-    margin-bottom: 4.5em;
-    display: grid;
-    grid-gap: 1.5em;
-    grid-template-columns: repeat(12, 1fr)
-  }
-  .pastwork-ArchDescription,
-  .pastwork-FurnitureDescription,
-  .pastwork-GraphicsDescription {
-    grid-column: 1 / -1;
-    height: 40vh;
-  }
-  .pastwork-ArchCover,
-  .pastwork-FurnitureCover,
-  .pastwork-GraphicsCover {
-    grid-column: 1 / -1;
-    height: 45vh;
-  }
-  footer li {
-    display: block;
-  }
-
 }
 
 @media screen and (min-width: 200px) and (max-width: 449px) {
