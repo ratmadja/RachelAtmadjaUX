@@ -445,14 +445,14 @@ footer a {
   .pastwork-FurnitureCover,
   .pastwork-GraphicsCover {
     grid-column: 7 / -1;
-    height: 45vh;
+    height: 30vw;
   }
   footer li {
     display: block;
   }
 }
 
-@media screen and (min-width: 575px) and (max-width: 767px) {
+@media screen and (min-width: 550px) and (max-width: 767px) {
 
   .container {
     border: 1px solid red;
@@ -538,6 +538,12 @@ footer a {
   .section-pastwork a{
     font-size: 1em;
   }
+  .pastwork-title {
+    display: none;
+  }
+  .pastwork-heading {
+    margin-top: 0.5em;
+  }
   .pastwork-architecture,
   .pastwork-furniture,
   .pastwork-graphics {
@@ -556,7 +562,7 @@ footer a {
   .pastwork-FurnitureCover,
   .pastwork-GraphicsCover {
     grid-column: 7 / -1;
-    height: 45vh;
+    height: 30vw;
   }
   footer li {
     display: block;
@@ -564,7 +570,7 @@ footer a {
 
 }
 
-@media screen and (min-width: 450px) and (max-width: 574px) {
+@media screen and (min-width: 480px) and (max-width: 549px) {
 
   .container {
     border: 1px solid green;
@@ -672,7 +678,7 @@ footer a {
   .pastwork-GraphicsDescription {
     /* border: 1px solid green; */
     grid-column: 1 / -1;
-    height: 50vw;
+    height: 45vw;
   }
   .pastwork-ArchCover,
   .pastwork-FurnitureCover,
@@ -685,7 +691,7 @@ footer a {
   }
 }
 
-@media screen and (min-width: 200px) and (max-width: 449px) {
+@media screen and (min-width: 200px) and (max-width: 479px) {
 
   .container {
     border: 1px solid purple;
