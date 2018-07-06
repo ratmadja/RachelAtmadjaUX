@@ -78,12 +78,13 @@ p {
 
 .work-name {
   font-family: 'work sans', sans-serif;
-  font-size: 1em;
+  font-size: 0.85em;
   line-height: 1.5em;
   margin-top: 1.5em;
-  margin-bottom: -4em;
-  font-weight: bold;
+  margin-bottom: -4.5em;
   font-stretch: expanded;
+  color: #919191;
+
 }
 
 /* End of typography sizes */
@@ -149,7 +150,13 @@ nav .menu {
   grid-column: 1 / 4;
 }
 
+.hero-two h5 {
+  color: #919191;
+}
+
 .hero-two p {
+  font-family: 'Fira Mono', monospace;
+  font-size: 0.8em;
   margin-top: 0.25em;
 }
 
@@ -166,34 +173,23 @@ nav .menu {
 
 
 .section-title {
-  /* border: 1px solid #c3c3c3 */
+  margin: auto;
   margin-top: 3em;
   text-align: center;
 }
 
 .page-separator {
   margin: auto;
-  margin-bottom: 9em;
   width: 5em;
-  height: 3px;
+  height: 1px;
   background-color: #DA9218;
+  margin-top: 2em;  /*Controls distance to section-title*/
 }
 
 /* End of main styling */
 
 /* Start of WORK Styling */
 
-.worklink {
-  display: inline-block;
-  margin: 1.5em 0em;
-  color: #333333;
-  font-size: 1.1em;
-  font-family: 'spectral', serif;
-}
-
-.worklink:hover {
-  background-color: #DA9218;
-}
 
 .section-work {
   /* border: 1px solid grey; */
@@ -208,13 +204,8 @@ nav .menu {
   grid-template-columns: repeat(12, 1fr);
 }
 
-.work-name {
-  margin-bottom: -3.75em;
-  color: #333333;
-}
-
 .work-description {
-  border-top: 1px solid #333333;
+  border-top: 1px solid #C5C5C5;
   grid-column: 1 / 5;
 }
 
@@ -239,6 +230,21 @@ nav .menu {
   height: 50vw;
 }
 
+.worklink {
+  display: inline-block;
+  margin: 1.5em 0em;
+  color: #333333;
+  font-size: 1em;
+  font-family: 'work sans', sans-serif;
+  text-decoration: none;
+  line-height: 1.5em;
+  border-bottom: 1px solid #C5C5C5;
+}
+
+.worklink:hover {
+  border-bottom: 1px solid #DA9218;
+}
+
 /* Start of code for pointer for cover div */
 
 .work-NimbusDashCover:hover {
@@ -249,22 +255,15 @@ nav .menu {
   cursor: pointer;
 }
 
-/* Start of code for pointer for cover div */
+/* End of code for pointer for cover div */
 
 
 /* Start of Past Work Styling */
 
-.worklink {
-  display: inline-block;
-  margin: 1.5em 0em;
-  color: #333333;
-  font-size: 1em;
-  font-family: 'spectral', serif;
-}
 
 .section-pastwork {
   /* border: 1px solid #c3c3c3; */
-  margin-top: 4em;
+  margin-top: 9em;
   margin-bottom: 9em;
   display: grid;
   grid-gap: 0em 1.5em;
@@ -281,7 +280,7 @@ nav .menu {
 }
 
 .pastwork-ArchDescription {
-  border-top: 1px solid #333333;
+  border-top: 1px solid #C5C5C5;
   height: 17em;
 }
 
@@ -296,7 +295,7 @@ nav .menu {
 }
 
 .pastwork-FurnitureDescription {
-  border-top: 1px solid #333333;
+  border-top: 1px solid #C5C5C5;
   height: 17em;
 }
 
@@ -311,7 +310,7 @@ nav .menu {
 }
 
 .pastwork-GraphicsDescription {
-  border-top: 1px solid #333333;
+  border-top: 1px solid #C5C5C5;
   height: 17em;
 }
 
@@ -369,19 +368,52 @@ footer a {
   grid-column: 9 / -1;
 }
 
-/* .footer-contact {
-  grid-column: 5 / 9;
-} */
-
 /* End of Footer Styling */
 
 
-@media screen and (min-width: 768px) and (max-width: 900px) {
+
+
+@media only screen and (min-width: 1280px) {
+
+  /* Start of image size controls for screens wider than 1280px
+  Assigned max-height to casestudy covers and pastwork descriptions,
+  Basically anything whose height is a percentage of vw (viewport width)*/
+
+  .work-NimbusDashCover {
+    grid-column: 5 / -1;
+    background: url(../assets/homepage/coverNimbusDashCentered.jpg) no-repeat;
+    background-size: contain;
+    max-height: 35em;
+  }
+
+  .work-NimbusLandingCover {
+    grid-column: 5 / -1;
+    background: url(../assets/homepage/coverNimbusLandingCentered.jpg) no-repeat;
+    background-size: contain;
+    max-height: 35em;
+  }
+  .pastwork-ArchDescription,
+  .pastwork-FurnitureDescription,
+  .pastwork-GraphicsDescription {
+    max-height: 17em;
+  }
+
+  /* Assigned size 'contain' and position 'top' */
+  .pastwork-ArchCover,
+  .pastwork-FurnitureCover,
+  .pastwork-GraphicsCover {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  /* End of image controls */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
 
   .container {
   border: 1px solid blue;
   }
-
   .casestudy-scope {
     display: none;
   }
@@ -419,7 +451,7 @@ footer a {
     margin-bottom: 0em;
   }
   .hero-two p {
-    font-size: 0.9em;
+    font-size: 0.75em;
   }
   .hero-two {
     margin-top: 2em;
@@ -430,10 +462,11 @@ footer a {
   .section-title {
     font-family: 'work sans', sans-serif;
     font-size: 2.8125em;
-    line-height: 1.06666667em;
+    line-height: 0.75em;
     margin-top: 3em;
-    margin-bottom: 1.06666666em;
+    margin-bottom: 0em;
   }
+
   .section-pastwork a{
     font-size: 1em;
   }
@@ -462,7 +495,7 @@ footer a {
   }
 }
 
-@media screen and (min-width: 550px) and (max-width: 767px) {
+@media only screen and (min-width: 550px) and (max-width: 767px) {
 
   .container {
     border: 1px solid red;
@@ -503,14 +536,14 @@ footer a {
     margin-bottom: 0em;
   }
   .hero-two p {
-    font-size: 1em;
+    font-size: 0.8em;
   }
   .hero-one {
     grid-column: 1 / -1;
   }
   .hero-two {
     margin-top: 2em;
-    grid-column: 1 / 5;
+    grid-column: 1 / -1;
     order: 1;
   }
   .hero-three {
@@ -520,9 +553,9 @@ footer a {
   .section-title {
     font-family: 'work sans', sans-serif;
     font-size: 2.8125em;
-    line-height: 1.06666667em;
+    line-height: 0.75em;
     margin-top: 3em;
-    margin-bottom: 1.06666666em;
+    margin-bottom: 0em;
   }
 
   /* adjusted case study to vertical orientation */
@@ -580,7 +613,7 @@ footer a {
 
 }
 
-@media screen and (min-width: 480px) and (max-width: 549px) {
+@media only screen and (min-width: 480px) and (max-width: 549px) {
 
   .container {
     border: 1px solid green;
@@ -590,7 +623,7 @@ footer a {
     display: none;
   }
   main {
-    margin: 0em 3em;
+    margin: 0em 1.5em;
   }
   header {
     /* border: 1px solid red; */
@@ -609,20 +642,21 @@ footer a {
   .hero-image {
     margin: 1em 0em;
   }
-  .hero-one h3{
+  .hero-one h3,
+  .hero-three h4 {
     font-family: 'spectral', serif;
-    font-size: 1.4375em;
+    font-size: 1.2em;
     line-height: 1.5em;
     margin-top: 1.04347826em;
     margin-bottom: 0em;
   }
-  .hero-three h4 {
+  /* .hero-three h4 {
     font-family: 'spectral', serif;
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1.5em;
-    margin-top: 1.5em;
+    margin-top: 1.04347826em;
     margin-bottom: 0em;
-  }
+  } */
   .work-description h3{
     font-family: 'spectral', serif;
     font-size: 1.4375em;
@@ -631,7 +665,7 @@ footer a {
     margin-bottom: 0em;
   }
   .hero-two p {
-    font-size: 1em;
+    font-size: 0.75em;
   }
   .hero-one {
     grid-column: 1 / -1;
@@ -648,9 +682,9 @@ footer a {
   .section-title {
     font-family: 'work sans', sans-serif;
     font-size: 2.8125em;
-    line-height: 1.06666667em;
+    line-height: 0.75em;
     margin-top: 3em;
-    margin-bottom: 1.06666666em;
+    margin-bottom: 0em;
   }
 
   /* adjusted case study to vertical orientation */
@@ -703,7 +737,7 @@ footer a {
   }
 }
 
-@media screen and (min-width: 200px) and (max-width: 479px) {
+@media only screen and (min-width: 200px) and (max-width: 479px) {
 
   .container {
     border: 1px solid purple;
@@ -715,9 +749,6 @@ footer a {
 
   .section-work {   /* Controls spacing above first casestudy*/
     margin-top: 9em;
-  }
-  .page-separator {   /* Modified from 450-574px */
-    margin-bottom: 6em;
   }
   main {
     margin: 0em 1.5em;
@@ -745,22 +776,23 @@ footer a {
   }
 
   .hero-image {    /* Modified from 450-574px */
-    margin: 0em 0em;
+    margin-top: 1em;
   }
-  .hero-one h3{     /* Modified from 450-574px */
+  .hero-one h3,
+  .hero-three h4 {     /* Modified from 450-574px */
+    font-family: 'spectral', serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 0em;
+  }
+  /* .hero-three h4, {
     font-family: 'spectral', serif;
     font-size: 1em;
     line-height: 1.5em;
     margin-top: 1.5em;
     margin-bottom: 0em;
-  }
-  .hero-three h4 {
-    font-family: 'spectral', serif;
-    font-size: 1em;
-    line-height: 1.5em;
-    margin-top: 1.5em;
-    margin-bottom: 0em;
-  }
+  } */
   .work-description h3{
     font-family: 'spectral', serif;
     font-size: 1.4375em;
@@ -769,7 +801,7 @@ footer a {
     margin-bottom: 0em;
   }
   .hero-two p {
-    font-size: 1em;
+    font-size: 0.75em;
   }
   .hero-one {
     grid-column: 1 / -1;
@@ -788,9 +820,9 @@ footer a {
   .section-title {
     font-family: 'work sans', sans-serif;
     font-size: 2.8125em;
-    line-height: 1.06666667em;
+    line-height: 0.75em;
     margin-top: 3em;
-    margin-bottom: 1.06666666em;
+    margin-bottom: 0em;
   }
 
   /* adjusted case study to vertical orientation */
