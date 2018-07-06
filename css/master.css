@@ -28,7 +28,8 @@ main {
 h1 {
   font-family: 'work sans', sans-serif;
   font-size: 4em;
-  font-weight: bold;
+  font-weight: 600;
+  font-kerning: auto;
   line-height: 1.06666667em;
   margin-top: 0.53333333em;
   margin-bottom: 1.06666666em;
@@ -78,6 +79,7 @@ p {
 
 .work-name {
   font-family: 'work sans', sans-serif;
+  font-weight: 400;
   font-size: 0.85em;
   line-height: 1.5em;
   margin-top: 1.5em;
@@ -125,6 +127,7 @@ nav .menu {
   text-decoration: none;
   color: #333333;
   font-size: 0.75em;
+  font-weight: 500;
   font-family: 'work sans', sans-serif;
 }
 
@@ -151,6 +154,7 @@ nav .menu {
 }
 
 .hero-two h5 {
+  font-weight: 400;
   color: #919191;
 }
 
@@ -211,7 +215,7 @@ nav .menu {
 
 .casestudy-scope {
   font-family: 'work sans', sans-serif;
-  color: #5A5A5A;
+  color: #919191;
 }
 
 .work-NimbusDashCover {
@@ -246,15 +250,21 @@ nav .menu {
 }
 
 /* Start of code for pointer for cover div */
-
 .work-NimbusDashCover:hover {
   cursor: pointer;
 }
-
 .work-NimbusLandingCover:hover {
   cursor: pointer;
 }
-
+.pastwork-ArchCover {
+  cursor: pointer;
+}
+.pastwork-FurnitureCover {
+  cursor: pointer;
+}
+.pastwork-GraphicsCover {
+  cursor: pointer;
+}
 /* End of code for pointer for cover div */
 
 
@@ -268,6 +278,10 @@ nav .menu {
   display: grid;
   grid-gap: 0em 1.5em;
   grid-template-columns: repeat(12, 1fr);
+}
+
+.pastwork-title {
+  color: #919191;
 }
 
 .pastwork-heading {
@@ -345,7 +359,6 @@ footer li {
   margin-right: 1em;
   margin-top: 0.5em;
   font-family: 'work sans', sans-serif;
-  font-weight: lighter;
   font-size: 0.75em;
   color: #333333;
 }
@@ -506,6 +519,9 @@ footer a {
   main {
     margin: 0em 3em;
   }
+  .menu a {
+    font-weight: 500;
+  }
   header {
     /* border: 1px solid red; */
     margin-top: 3em;
@@ -624,6 +640,9 @@ footer a {
   }
   main {
     margin: 0em 1.5em;
+  }
+  .menu a {
+    font-weight: 500;
   }
   header {
     /* border: 1px solid red; */
@@ -752,6 +771,9 @@ footer a {
   }
   main {
     margin: 0em 1.5em;
+  }
+  .menu a {
+    font-weight: 500;
   }
   header {
     margin-top: 2em;
