@@ -1,3 +1,5 @@
+/*--Identical conent to master.css--*/
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -7,32 +9,37 @@ html, .root {
   line-height: 24px;
 }
 
-body, .article {
+body {
   font-family: 'spectral', serif;
   font-size: 1em;
   line-height: 1.5em;
-  max-width: 1056px;
-  margin: auto;
   color: #333333;
 }
 
-.logo {
-  display: flex;
-  justify-content: center;
-  margin: 72px;
+.container {
+  margin: auto;
+  max-width: 1280px;
 }
+
+main {
+  margin: 0em 4.5em;
+}
+
+/* Start of typography sizes */
 
 h1 {
   font-family: 'work sans', sans-serif;
   font-size: 4em;
-  font-weight: bold;
+  font-weight: 600;
+  font-kerning: auto;
   line-height: 1.06666667em;
   margin-top: 0.53333333em;
   margin-bottom: 1.06666666em;
+  color: #333333;
 }
 
 h2 {
-  font-family: 'spectral', serif;
+  font-family: 'work sans', sans-serif;
   font-size: 2.8125em;
   line-height: 1.06666667em;
   margin-top: 0.53333333em;
@@ -72,48 +79,30 @@ p {
   margin-bottom: 0em;
 }
 
+/* End of typography sizes */
 
-ul li, a {
-  display: inline;
-  text-decoration: none;
-  color: #333333;
-  font-size: 1 em;
-  font-family: 'work sans', sans-serif;
+.section-title {
+  margin: auto;
+  margin-top: 3em;
+  text-align: center;
 }
-
 
 .page-separator {
+  margin: auto;
   width: 5em;
-  height: 3px;
+  height: 1px;
   background-color: #DA9218;
+  margin-top: 2em;  /*Controls distance to section-title*/
 }
 
-.container {
-  margin: 72px;
-  display: grid;
-  grid-gap: 0em 1.5em;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 75vh 200px 144px;
-}
 
-.casestudy-header {
-  display: flex;
-  flex-direction: column;
-}
+/*--Identical conent to master.css--*/
 
-.casestudy-hero {
-  grid-column: 1 / -1;
-  background: url(../assets/heroNimbusdash.jpg) center / cover;
-  height: 77vh;               /*viewport height*/
-}
-
-.casestudy-nav {
-  grid-column: 1 / -1;
-  height: 72px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fafafa;
-  border-bottom: 1px solid #BDBDBD;
-  border-top: 1px solid #BDBDBD;
+.caption {
+  font-family: 'work sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.85em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  color: #919191;
 }
