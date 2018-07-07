@@ -98,7 +98,25 @@ p {
 
 /*--Identical conent to master.css--*/
 
+
+
+
 .hero-content {
   margin-top: 4.5em;
   background-color: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-headline h4,
+.hero-headline p {
+  text-align: center;
+
+}
+
+.hero-image {
+  width: 80%;
+  display: block;
 }
