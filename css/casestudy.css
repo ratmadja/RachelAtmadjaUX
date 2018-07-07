@@ -98,11 +98,7 @@ p {
 
 /*--Identical conent to master.css--*/
 
-.caption {
-  font-family: 'work sans', sans-serif;
-  font-weight: 400;
-  font-size: 0.85em;
-  line-height: 1.5em;
-  margin-top: 1.5em;
-  color: #919191;
+.hero-content {
+  margin-top: 4.5em;
+  background-color: #FAFAFA;
 }
