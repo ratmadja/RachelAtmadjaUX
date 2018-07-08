@@ -1,5 +1,4 @@
-/*--Identical conent to master.css--*/
-
+/*-------------------Start of styling identical to master.css----------------------------*/
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -30,7 +29,7 @@ main {
 h1 {
   font-family: 'work sans', sans-serif;
   font-size: 4em;
-  font-weight: 600;
+  font-weight: 500;
   font-kerning: auto;
   line-height: 1.06666667em;
   margin-top: 0.53333333em;
@@ -55,7 +54,7 @@ h3 {
 }
 
 h4 {
-   font-family: 'spectral', serif;
+   \font-family: 'spectral', serif;
   font-size: 1.4375em;
   line-height: 1.5em;
   margin-top: 1.04347826em;
@@ -81,26 +80,28 @@ p {
 
 /* End of typography sizes */
 
-.section-title {
-  margin: auto;
-  margin-top: 3em;
-  text-align: center;
+.worklink {
+  display: inline-block;
+  margin: 1.5em 0em;
+  color: #333333;
+  font-size: 1em;
+  font-family: 'work sans', sans-serif;
+  text-decoration: none;
+  line-height: 1.5em;
+  border-bottom: 1px solid #C5C5C5;
 }
 
-.page-separator {
-  margin: auto;
-  width: 5em;
-  height: 1px;
-  background-color: #DA9218;
-  margin-top: 2em;  /*Controls distance to section-title*/
+.worklink:hover {
+  border-bottom: 1px solid #DA9218;
 }
 
-
-/*--Identical conent to master.css--*/
-
+/*-------------------End of styling identical to master.css----------------------------*/
 
 
 
+
+
+/*------- Start of hero content styling -------*/
 .hero-content {
   margin-top: 4.5em;
   background-color: #FAFAFA;
@@ -110,13 +111,404 @@ p {
   align-items: center;
 }
 
-.hero-headline h4,
+
+.hero-headline h3,
 .hero-headline p {
   text-align: center;
+}
 
+.hero-headline p {
+  color: #5E5E5E;
 }
 
 .hero-image {
-  width: 80%;
   display: block;
+  width: 70%;
+  margin-top: 1em;
+}
+/*------- End of hero content styling -------*/
+
+
+/*------- Start of nav styling -------*/
+nav {
+  border-bottom: 1px solid #C5C5C5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5em;
+}
+
+.nav-home, .nav-nextcs {
+  font-family: 'work sans', sans-serif;
+  font-size: 1em;
+  text-decoration: none;
+  color: #919191;
+  width: 20%;
+}
+
+.nav-nextcs {
+  text-align: right;
+}
+
+.nav-cs {
+  /* border: 1px solid red; */
+  margin: auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .cs-stages li {
+  display: inline;
+  margin: 0em 0.5em;
+
+} */
+
+.nav-cs a {
+  font-family: 'work sans', sans-serif;
+  font-size: 1em;
+  text-decoration: none;
+  color: #333333;
+
+}
+
+/*------- End of nav styling -------*/
+
+
+
+/*------- Start of casestudy styling -------*/
+
+
+.cs-info {
+    margin-top: 6em;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cs-info-roles,
+.cs-info-deliverables,
+.cs-info-specs {
+  width: 30%;
+  padding-left: 0.5em;
+  border-top: 1px solid #C5C5C5;
+  /* border-right: 1px solid #C5C5C5;; */
+}
+
+.cs-info h5 {
+  color: #5E5E5E;
+  line-height: 2em;
+  margin-top: 0.25em;
+  margin-bottom: 1em;
+}
+
+.cs-info li {
+  font-family: 'spectral', serif;
+  font-size: 0.95em;
+  line-height: 1.5em;
+  /* font-family: 'fira mono', monospace;
+  font-size: 1em;
+  line-height: 2em; */
+}
+
+.casestudy {
+  margin-bottom: 9em;
+}
+
+.section-title {
+  margin: auto;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.page-separator {
+  margin: auto;
+  width: 5em;
+  height: 1px;
+  background-color: #DA9218;
+  margin-top: 2em;  /*Controls distance to section-title*/
+  margin-bottom: 6em;
+}
+
+.casestudy h3.
+.casestudy h4 {
+  padding-top: 2em;
+}
+
+.casestudy p {
+  margin-bottom: 2em;
+}
+
+.casestudy h3,
+.casestudy h4,
+.casestudy p {
+  max-width: 60%;
+  margin-left: 20%;
+}
+
+.img-fullwidth {
+  width: 100%;
+  display: block;
+  margin: 4em 0em;
+}
+
+/* .img-halfwidth is a child of img containers */
+
+
+.img-contain4 {
+  padding-left: 1.5%;
+  margin: 4em 0em;
+}
+
+.img-incontain4 {
+  margin: auto;
+  width: 49%;
+  display: inline;  /*adjust to 'block' for vertical layout*/
+}
+
+.img-contain2 {
+  display: flex;
+  flex-direction: row;    /*adjust to 'column' for vertical layout*/
+  justify-content: center;
+  align-items: center;
+  margin: 4em 0em;
+}
+
+.img-incontain2 {
+  margin: auto;
+  width: 49%;
+  display: inline;
+}
+
+.img-contain1 {
+  display: flex;
+  flex-direction: row;    /*adjust to 'column' for vertical layout*/
+  justify-content: center;
+  align-items: center;
+  margin: 4em 0em;
+}
+
+.img-incontain1 {
+  width: 60%;
+}
+
+
+
+
+/*------- End of casestudy styling -------*/
+
+
+
+/* bluezone */
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .container {
+  border: 1px solid blue;
+  }
+}
+
+/* redzone */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    border: 1px solid red;
+  }
+  main {
+    margin: 0em 3em;
+  }
+  .hero-content {
+    margin-top: 3em;
+  }
+  .hero-headline h3 {
+    font-family: 'spectral', serif;
+    font-size: 1.4375em;
+    line-height: 1.5em;
+    margin-top: 1.04347826em;
+    margin-bottom: 0em;
+  }
+  .hero-headline {
+    width: 80%;
+  }
+  .casestudy h3,
+  .casestudy h4,
+  .casestudy p {
+    max-width: 70%;
+    margin-left: 15%;
+  }
+  .img-incontain4 {
+    margin: auto;
+    width: 80%;
+    display: block;
+  }
+  .img-contain2 {
+    flex-direction: column;    /*adjust to 'column' for vertical layout*/
+    margin: 4em 0em;
+  }
+  .img-incontain2 {
+    width: 70%;
+  }
+}
+
+/* greenzone */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+  border: 1px solid green;
+  }
+  main {
+    margin: 0em 1.5em;
+  }
+  .hero-content {
+    margin-top: 1.5em;
+  }
+  .hero-headline h3,
+  .hero-headline p {
+    display: none;
+  }
+  .hero-headline {
+    width: 80%;
+  }
+  .hero-image {
+    margin-top: 3em;
+  }
+  nav {
+    height: 3em;
+  }
+  .nav-cs {
+    display: none;
+  }
+  .nav-home, .nav-nextcs {
+    width: 50%;
+    font-size: 0.75em;
+  }
+  .cs-info {
+      margin-top: 3em;
+      margin-left: 0em;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+  .cs-info-roles,
+  .cs-info-deliverables,
+  .cs-info-specs {
+    border-top: none;
+    border-left: 1px solid #C5C5C5;
+    padding-left: 0.25em;
+    margin-bottom: 1em;
+  }
+  .page-separator {
+    margin-bottom: 4em;
+
+  }
+  .casestudy h3,
+  .casestudy h4,
+  .casestudy p {
+    max-width: 90%;   /*Controls margins*/
+    margin-left: 5%;
+  }
+  .casestudy h2 {
+    font-size: 2em;
+  }
+  .img-incontain4 {
+    margin: auto;
+    width: 90%;
+    display: block;
+  }
+  .img-contain2 {
+    flex-direction: column;    /*adjust to 'column' for vertical layout*/
+    margin: 4em 0em;
+  }
+  .img-incontain2 {
+    width: 90%;
+  }
+  .img-incontain1 {
+    width: 80%;
+  }
+}
+
+/* purplezone */
+@media only screen and (min-width: 280px) and (max-width: 479px) {
+  .container {
+  border: 1px solid purple;
+  }
+  main {
+    margin: 0em 1em;
+  }
+  .hero-content {
+    margin-top: 1em;
+  }
+  .hero-headline h3,
+  .hero-headline p {
+    display: none;
+  }
+  .hero-headline {
+    width: 80%;
+  }
+  .hero-image {
+    margin-top: 3em;
+  }
+  nav {
+    height: 3em;
+  }
+  .nav-cs {
+    display: none;
+  }
+  .nav-home, .nav-nextcs {
+    width: 50%;
+    font-size: 0.75em;
+  }
+  .cs-info {
+    margin: auto;
+      margin-top: 3em;
+      width: 60%;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  .cs-info-roles,
+  .cs-info-deliverables,
+  .cs-info-specs {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  .page-separator {
+    margin-bottom: 4em;
+
+  }
+  .casestudy h3,
+  .casestudy h4,
+  .casestudy p {
+    max-width: 90%;   /*Controls margins*/
+    margin-left: 5%;
+  }
+  .casestudy h3 {
+    font-family: 'spectral', serif;
+   font-size: 1.4375em;
+   line-height: 1.5em;
+   margin-top: 1.04347826em;
+   margin-bottom: 0em;
+  }
+  .casestudy h4 {
+    font-family: 'spectral', serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 0em;
+  }
+  .casestudy h2 {
+    font-size: 2em;
+  }
+  .img-incontain4 {
+    margin: auto;
+    width: 100%;
+    display: block;
+  }
+  .img-contain2 {
+    flex-direction: column;    /*adjust to 'column' for vertical layout*/
+    margin: 4em 0em;
+  }
+  .img-incontain2 {
+    width: 100%;
+  }
+  .img-incontain1 {
+    width: 100%;
+  }
 }

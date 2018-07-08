@@ -387,7 +387,7 @@ footer a {
 
 
 
-
+/*maxzone*/
 @media only screen and (min-width: 1280px) {
 
   /* Start of image size controls for screens wider than 1280px
@@ -424,6 +424,7 @@ footer a {
   /* End of image controls */
 }
 
+/*bluezone*/
 @media only screen and (min-width: 768px) and (max-width: 900px) {
 
   .container {
@@ -510,6 +511,7 @@ footer a {
   }
 }
 
+/*redzone*/
 @media only screen and (min-width: 550px) and (max-width: 767px) {
 
   .container {
@@ -631,6 +633,7 @@ footer a {
 
 }
 
+/*greenzone*/
 @media only screen and (min-width: 480px) and (max-width: 549px) {
 
   .container {
@@ -758,6 +761,7 @@ footer a {
   }
 }
 
+/*purplezone*/
 @media only screen and (min-width: 200px) and (max-width: 479px) {
 
   .container {
