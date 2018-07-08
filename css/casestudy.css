@@ -303,16 +303,16 @@ nav {
 
 /* bluezone */
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
-  .container {
+  /* .container {
   border: 1px solid blue;
-  }
+  } */
 }
 
 /* redzone */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .container {
+  /* .container {
     border: 1px solid red;
-  }
+  } */
   main {
     margin: 0em 3em;
   }
@@ -351,9 +351,9 @@ nav {
 
 /* greenzone */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .container {
+  /* .container {
   border: 1px solid green;
-  }
+  } */
   main {
     margin: 0em 1.5em;
   }
@@ -427,9 +427,9 @@ nav {
 
 /* purplezone */
 @media only screen and (min-width: 280px) and (max-width: 479px) {
-  .container {
+  /* .container {
   border: 1px solid purple;
-  }
+  } */
   main {
     margin: 0em 1em;
   }

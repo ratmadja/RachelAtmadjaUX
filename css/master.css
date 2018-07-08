@@ -427,9 +427,9 @@ footer a {
 /*bluezone*/
 @media only screen and (min-width: 768px) and (max-width: 900px) {
 
-  .container {
+  /* .container {
   border: 1px solid blue;
-  }
+  } */
   .casestudy-scope {
     display: none;
   }
@@ -514,9 +514,9 @@ footer a {
 /*redzone*/
 @media only screen and (min-width: 550px) and (max-width: 767px) {
 
-  .container {
+  /* .container {
     border: 1px solid red;
-  }
+  } */
   .casestudy-scope {
     display: none;
   }
@@ -636,9 +636,9 @@ footer a {
 /*greenzone*/
 @media only screen and (min-width: 480px) and (max-width: 549px) {
 
-  .container {
+  /* .container {
     border: 1px solid green;
-  }
+  } */
 
   .casestudy-scope {
     display: none;
@@ -764,9 +764,9 @@ footer a {
 /*purplezone*/
 @media only screen and (min-width: 200px) and (max-width: 479px) {
 
-  .container {
+  /* .container {
     border: 1px solid purple;
-  }
+  } */
 
   .casestudy-scope {
     display: none;
