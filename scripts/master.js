@@ -1,28 +1,8 @@
-// Start of what makes cover div clickable
+// Start of Syntax to make an entire div clickable
 
-$(".work-NimbusDashCover").click (function () {
-  window.location = $(this).find("a").attr("href");
-  return false;
-});
+// $(".work-NimbusDashCover").click (function () {
+//   window.location = $(this).find("a").attr("href");
+//   return false;
+// });
 
-$(".work-NimbusLandingCover").click (function () {
-  window.location = $(this).find("a").attr("href");
-  return false;
-});
-
-$(".pastwork-ArchCover").click (function () {
-  window.location = $(this).find("a").attr("href");
-  return false;
-});
-
-$(".pastwork-FurnitureCover").click (function () {
-  window.location = $(this).find("a").attr("href");
-  return false;
-});
-
-$(".pastwork-GraphicsCover").click (function () {
-  window.location = $(this).find("a").attr("href");
-  return false;
-});
-
-// Start of what makes cover div clickable
+// End of Syntax to make an entire div clickable

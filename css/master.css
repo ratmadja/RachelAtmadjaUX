@@ -220,20 +220,16 @@ nav .menu {
   color: #919191;
 }
 
-.work-NimbusDashCover {
+.workcover-container {
   grid-column: 5 / -1;
-  background: url(../assets/homepage/coverNimbusDash.jpg) no-repeat center;
-  background-size: cover;
-  background-position: 100% 100%;
-  height: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.work-NimbusLandingCover {
-  grid-column: 5 / -1;
-  background: url(../assets/homepage/coverNimbusLanding.jpg) no-repeat center;
-  background-size: cover;
-  background-position: 100% 100%;
-  height: 50vw;
+.workcover {
+  width: 100%;
 }
 
 .worklink {
@@ -250,24 +246,6 @@ nav .menu {
 .worklink:hover {
   border-bottom: 1px solid #DA9218;
 }
-
-/* Start of code for pointer for cover div */
-.work-NimbusDashCover:hover {
-  cursor: pointer;
-}
-.work-NimbusLandingCover:hover {
-  cursor: pointer;
-}
-.pastwork-ArchCover {
-  cursor: pointer;
-}
-.pastwork-FurnitureCover {
-  cursor: pointer;
-}
-.pastwork-GraphicsCover {
-  cursor: pointer;
-}
-/* End of code for pointer for cover div */
 
 
 /* Start of Past Work Styling */
@@ -295,29 +273,9 @@ nav .menu {
   grid-column: 1 / 5;
 }
 
-.pastwork-ArchDescription {
-  border-top: 1px solid #C5C5C5;
-  height: 17em;
-}
-
-.pastwork-ArchCover {
-  background: url(../assets/homepage/pastworkArchitecture.jpg) center / cover;
-  height: 20vw;
-}
-
 .pastwork-furniture {
   /* border: 1px solid #c3c3c3; */
   grid-column: 5 / 9;
-}
-
-.pastwork-FurnitureDescription {
-  border-top: 1px solid #C5C5C5;
-  height: 17em;
-}
-
-.pastwork-FurnitureCover {
-  background: url(../assets/homepage/pastworkFurniture.jpg) center / cover;
-  height: 20vw;
 }
 
 .pastwork-graphics {
@@ -325,16 +283,22 @@ nav .menu {
   grid-column: 9 / -1;
 }
 
-.pastwork-GraphicsDescription {
+.pastwork-architecture,
+.pastwork-furniture,
+.pastwork-graphics {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.pastwork-description {
   border-top: 1px solid #C5C5C5;
-  height: 17em;
 }
 
-.pastwork-GraphicsCover {
-  background: url(../assets/homepage/pastworkGraphics.jpg) center / cover;
-  height: 20vw;
+.pastworkcover {
+  width: 100%;
 }
-
 
 /* End of Past Work Styling */
 
@@ -387,49 +351,13 @@ footer a {
 
 
 
-/*maxzone*/
-@media only screen and (min-width: 1280px) {
-
-  /* Start of image size controls for screens wider than 1280px
-  Assigned max-height to casestudy covers and pastwork descriptions,
-  Basically anything whose height is a percentage of vw (viewport width)*/
-
-  .work-NimbusDashCover {
-    grid-column: 5 / -1;
-    background: url(../assets/homepage/coverNimbusDashCentered.jpg) no-repeat;
-    background-size: contain;
-    max-height: 35em;
-  }
-
-  .work-NimbusLandingCover {
-    grid-column: 5 / -1;
-    background: url(../assets/homepage/coverNimbusLandingCentered.jpg) no-repeat;
-    background-size: contain;
-    max-height: 35em;
-  }
-  .pastwork-ArchDescription,
-  .pastwork-FurnitureDescription,
-  .pastwork-GraphicsDescription {
-    max-height: 17em;
-  }
-
-  /* Assigned size 'contain' and position 'top' */
-  .pastwork-ArchCover,
-  .pastwork-FurnitureCover,
-  .pastwork-GraphicsCover {
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  /* End of image controls */
-}
 
 /*bluezone*/
-@media only screen and (min-width: 768px) and (max-width: 900px) {
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
 
-  /* .container {
+  .container {
   border: 1px solid blue;
-  } */
+  }
   .casestudy-scope {
     display: none;
   }
@@ -482,29 +410,8 @@ footer a {
     margin-top: 3em;
     margin-bottom: 0em;
   }
-
   .section-pastwork a{
     font-size: 1em;
-  }
-  .pastwork-architecture,
-  .pastwork-furniture,
-  .pastwork-graphics {
-    grid-column: 1 / -1;
-    margin-bottom: 72px;
-    display: grid;
-    grid-gap: 1.5em;
-    grid-template-columns: repeat(12, 1fr)
-  }
-  .pastwork-ArchDescription,
-  .pastwork-FurnitureDescription,
-  .pastwork-GraphicsDescription {
-    grid-column: 1 / 7;
-  }
-  .pastwork-ArchCover,
-  .pastwork-FurnitureCover,
-  .pastwork-GraphicsCover {
-    grid-column: 7 / -1;
-    height: 30vw;
   }
   footer li {
     display: block;
@@ -512,11 +419,11 @@ footer a {
 }
 
 /*redzone*/
-@media only screen and (min-width: 550px) and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
 
-  /* .container {
+  .container {
     border: 1px solid red;
-  } */
+  }
   .casestudy-scope {
     display: none;
   }
@@ -577,55 +484,22 @@ footer a {
     margin-top: 3em;
     margin-bottom: 0em;
   }
-
-  /* adjusted case study to vertical orientation */
-
-  .work-description {
-    grid-column: 1 / -1;
-  }
-  .work-NimbusDashCover {
-    grid-column: 1 / -1;
-    background: url(../assets/homepage/coverNimbusDashCentered.jpg) no-repeat center;
-    background-size: contain;
-    height: 70vw;
-  }
-  .work-NimbusLandingCover {
-    grid-column: 1 / -1;
-    background: url(../assets/homepage/coverNimbusLandingCentered.jpg) no-repeat center;
-    background-size: contain;
-    height: 70vw;
-  }
-
-  /* adjusted case study to vertical orientation */
-
-  .section-pastwork a{
-    font-size: 1em;
-  }
   .pastwork-title {
     display: none;
-  }
-  .pastwork-heading {
-    margin-top: 0.5em;
   }
   .pastwork-architecture,
   .pastwork-furniture,
   .pastwork-graphics {
     grid-column: 1 / -1;
-    margin-bottom: 2em;
-    display: grid;
-    grid-gap: 1.5em;
-    grid-template-columns: repeat(12, 1fr)
+    flex-direction: row;
+    margin-top: 2em;
   }
-  .pastwork-ArchDescription,
-  .pastwork-FurnitureDescription,
-  .pastwork-GraphicsDescription {
-    grid-column: 1 / 7;
+  .pastwork-description,
+  .pastworkcover-container {
+    width: 50%;
   }
-  .pastwork-ArchCover,
-  .pastwork-FurnitureCover,
-  .pastwork-GraphicsCover {
-    grid-column: 7 / -1;
-    height: 30vw;
+  .pastwork-description {
+    margin-right: 1em;
   }
   footer li {
     display: block;
@@ -634,11 +508,11 @@ footer a {
 }
 
 /*greenzone*/
-@media only screen and (min-width: 480px) and (max-width: 549px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
 
-  /* .container {
+  .container {
     border: 1px solid green;
-  } */
+  }
 
   .casestudy-scope {
     display: none;
@@ -674,13 +548,6 @@ footer a {
     margin-top: 1.04347826em;
     margin-bottom: 0em;
   }
-  /* .hero-three h4 {
-    font-family: 'spectral', serif;
-    font-size: 1.2em;
-    line-height: 1.5em;
-    margin-top: 1.04347826em;
-    margin-bottom: 0em;
-  } */
   .work-description h3{
     font-family: 'spectral', serif;
     font-size: 1.4375em;
@@ -716,45 +583,32 @@ footer a {
   .work-description {
     grid-column: 1 / -1;
   }
-  .work-NimbusDashCover {
+  .workcover-container {
     grid-column: 1 / -1;
-    background: url(../assets/homepage/coverNimbusDashCentered.jpg) no-repeat center;
-    background-size: contain;
-    height: 70vw;
-  }
-  .work-NimbusLandingCover {
-    grid-column: 1 / -1;
-    background: url(../assets/homepage/coverNimbusLandingCentered.jpg) no-repeat center;
-    background-size: contain;
-    height: 70vw;
   }
 
   /* adjusted case study to vertical orientation */
 
-  .section-pastwork a{
-    font-size: 1em;
+
+  .pastwork-title {
+    display: none;
+  }
+  .pastwork-heading {
+    font-size: 1.25em;
   }
   .pastwork-architecture,
   .pastwork-furniture,
   .pastwork-graphics {
     grid-column: 1 / -1;
-    margin-bottom: 4.5em;
-    display: grid;
-    grid-gap: 1.5em;
-    grid-template-columns: repeat(12, 1fr)
+    flex-direction: row;
+    margin-bottom: 4em;
   }
-  .pastwork-ArchDescription,
-  .pastwork-FurnitureDescription,
-  .pastwork-GraphicsDescription {
-    /* border: 1px solid green; */
-    grid-column: 1 / -1;
-    height: 45vw;
+  .pastwork-description,
+  .pastworkcover-container {
+    width: 50%;
   }
-  .pastwork-ArchCover,
-  .pastwork-FurnitureCover,
-  .pastwork-GraphicsCover {
-    grid-column: 1 / -1;
-    height: 60vw;
+  .pastwork-description {
+    margin-right: 1em;
   }
   footer li {
     display: block;
@@ -833,17 +687,15 @@ footer a {
   }
   .hero-one {
     grid-column: 1 / -1;
-    order: 1;
   }
   .hero-two {
     margin-top: 2em;
     grid-column: 1 / -1;
-    order: 3;
+    order: 1;
   }
   .hero-three {
     margin-top: 1em;
     grid-column: 1 / -1;
-    order: 2;
   }
   .section-title {
     font-family: 'work sans', sans-serif;
@@ -858,45 +710,29 @@ footer a {
   .work-description {
     grid-column: 1 / -1;
   }
-  .work-NimbusDashCover {
+  .workcover-container {
     grid-column: 1 / -1;
-    background: url(../assets/homepage/coverNimbusDashCentered.jpg) no-repeat center;
-    background-size: contain;
-    height: 70vw;
-  }
-  .work-NimbusLandingCover {
-    grid-column: 1 / -1;
-    background: url(../assets/homepage/coverNimbusLandingCentered.jpg) no-repeat center;
-    background-size: contain;
-    height: 70vw;
   }
 
   /* adjusted case study to vertical orientation */
-
-  .section-pastwork a{
-    font-size: 1em;
+  .worklink {
+    display: none;
+  }
+  .pastwork-title {
+    display: none;
+  }
+  .pastwork-heading {
+    font-size: 1.25em;
   }
   .pastwork-architecture,
   .pastwork-furniture,
   .pastwork-graphics {
     grid-column: 1 / -1;
-    margin-bottom: 4.5em;
-    display: grid;
-    grid-gap: 1.5em;
-    grid-template-columns: repeat(12, 1fr)
+    flex-direction: column;
+    margin-bottom: 6em;
   }
-  .pastwork-ArchDescription,
-  .pastwork-FurnitureDescription,
-  .pastwork-GraphicsDescription {
-    grid-column: 1 / -1;
-    height: 60vw;
-  }
-  .pastwork-ArchCover,
-  .pastwork-FurnitureCover,
-  .pastwork-GraphicsCover {
-    grid-column: 1 / -1;
-    background-position: cover;
-    height: 50vw;
+  .pastwork-description {
+    margin-bottom: 2em;
   }
   footer li {
     display: block;
