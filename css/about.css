@@ -221,6 +221,12 @@ nav {
   margin-bottom: 4em;
 }
 
+.centered-title {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
 .about h3.
 .about h4 {
   padding-top: 2em;
@@ -229,7 +235,6 @@ nav {
 .about p {
   margin-bottom: 2em;
 }
-
 .about h3,
 .about h4,
 .about p,
