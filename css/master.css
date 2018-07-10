@@ -92,7 +92,7 @@ p {
 /* End of typography sizes */
 
 
-/* Start of header styling*/
+/*------- Start of logo and nav styling -------*/
 
 header {
   margin-top: 4.5em;
@@ -102,18 +102,19 @@ header {
   align-items: center;
 }
 
+
 .ralogo {
   background: url(../assets/homepage/ralogo48.svg) center / cover;
   height: 48px;
   width: 76px;
 }
 
-nav {
+.nav-main {
   margin: 1.5em;
   width: 240px;
 }
 
-nav .menu {
+.menu {
   border-bottom: 1px solid #E6E6E6;
   line-height: 1.5em;
   display: flex;
@@ -136,6 +137,9 @@ nav .menu {
   margin-bottom: 1em;
 }
 
+
+/*------- End of logo and nav styling -------*/
+
 .hero-image {
   /* border: 1px solid #c3c3c3; */
   margin: 4.5em 0em;
@@ -148,8 +152,6 @@ nav .menu {
   grid-column: 1 / -2;
   height: auto;
 }
-
-
 
 .hero-two {
   grid-column: 1 / 4;
@@ -174,9 +176,8 @@ nav .menu {
 /* End of header styling */
 
 
+
 /* Start of main styling */
-
-
 
 .section-title {
   margin: auto;
@@ -268,24 +269,24 @@ nav .menu {
   height: 1.5em;
 }
 
-.pastwork-architecture {
+.pwArch {
   /* border: 1px solid #c3c3c3; */
   grid-column: 1 / 5;
 }
 
-.pastwork-furniture {
+.pwFloristry {
   /* border: 1px solid #c3c3c3; */
   grid-column: 5 / 9;
 }
 
-.pastwork-graphics {
+.pwFurn {
   /* border: 1px solid #c3c3c3; */
   grid-column: 9 / -1;
 }
 
-.pastwork-architecture,
-.pastwork-furniture,
-.pastwork-graphics {
+.pwArch,
+.pwFloristry,
+.pwFurn {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -368,6 +369,7 @@ footer a {
   nav {
     margin-top: 1.5em;
   }
+
   .ralogo {
     background: url(../assets/homepage/ralogo36.svg) center / cover;
     height: 36px;
@@ -481,9 +483,9 @@ footer a {
   .pastwork-title {
     display: none;
   }
-  .pastwork-architecture,
-  .pastwork-furniture,
-  .pastwork-graphics {
+  .pwArch,
+  .pwFloristry,
+  .pwFurn {
     grid-column: 1 / -1;
     flex-direction: row;
     margin-top: 2em;
@@ -517,7 +519,7 @@ footer a {
     /* border: 1px solid red; */
     margin-top: 3em;
   }
-  nav {me
+  nav {
     margin-top: 1.5em;
   }
   .ralogo {
@@ -586,9 +588,9 @@ footer a {
   .pastwork-heading {
     font-size: 1.25em;
   }
-  .pastwork-architecture,
-  .pastwork-furniture,
-  .pastwork-graphics {
+  .pwArch,
+  .pwFloristry,
+  .pwFurn {
     grid-column: 1 / -1;
     flex-direction: row;
     margin-bottom: 4em;
@@ -606,7 +608,7 @@ footer a {
 }
 
 /*purplezone*/
-@media only screen and (min-width: 200px) and (max-width: 479px) {
+@media only screen and (min-width: 280px) and (max-width: 479px) {
 
   .casestudy-scope {
     display: none;
@@ -628,7 +630,7 @@ footer a {
     margin-top: 1.5em;
     width: 14em;
   }
-  nav .menu {   /* Modified from 450-574px */
+  .nav-main {   /* Modified from 450-574px */
     line-height: 1.5em;
   }
   .menu a {   /* Modified from 450-574px */
@@ -711,9 +713,9 @@ footer a {
   .pastwork-heading {
     font-size: 1.25em;
   }
-  .pastwork-architecture,
-  .pastwork-furniture,
-  .pastwork-graphics {
+  .pwArch,
+  .pwFloristry,
+  .pwFurn {
     grid-column: 1 / -1;
     flex-direction: column;
     margin-bottom: 6em;

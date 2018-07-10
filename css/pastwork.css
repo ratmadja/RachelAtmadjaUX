@@ -102,70 +102,29 @@ p {
 
 
 
-/*------- Start of logo and nav styling -------*/
+/*------- Start of hero content styling -------*/
 
-header {
-  margin-top: 4.5em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.ralogo {
-  background: url(../assets/homepage/ralogo48.svg) center / cover;
-  height: 48px;
-  width: 76px;
-}
-
-.nav-main {
-  margin: 1.5em;
-  width: 240px;
-}
-
-.menu {
-  border-bottom: 1px solid #E6E6E6;
-  line-height: 1.5em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu a {
-  /* border: 1px solid red; */
-  padding-bottom: 0.45em;
-  text-decoration: none;
-  color: #333333;
-  font-size: 0.75em;
-  font-weight: 500;
-  font-family: 'work sans', sans-serif;
-}
-
-.menu a:hover {
-  border-bottom: 1px solid #DA9218;
-  margin-bottom: 1em;
-}
-
-/*------- End of logo and nav styling -------*/
 
 .hero-content {
   /* border: 1px solid grey; */
+  margin-top: 4.5em;
   background-color: #FAFAFA;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 0.5%;
-  margin-top: 4em;
 }
 
-/*------- End of logo and nav styling -------*/
+.hero-fullwidth {
+  /* border: 1px solid grey; */
+  grid-column: 1 / -1;
+}
 
-.hero-left {
+.hero-halfwidth-left {
   /* border: 1px solid grey; */
   grid-column: 1 / 7;
 }
 
-.hero-right {
+.hero-halfwidth-right {
   /* border: 1px solid grey; */
   grid-column: 7 / -1;
 
@@ -175,26 +134,67 @@ header {
   align-items: center;
 }
 
-.hero-big {
+.hero-image {
   display: block;
   width: 100%;
 }
 
-.hero-small {
-  width: 100%;
+.hero-twothirdswidth-left {
+  grid-column: 1 / 9;
 }
 
-/*------- End of header content styling -------*/
+.hero-onethirdwidth-right {
+  grid-column: 9 / -1;
+}
+
+/*------- End of hero content styling -------*/
 
 
 
+/*------- Start of nav styling -------*/
+nav {
+  border-bottom: 1px solid #C5C5C5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5em;
+}
+
+.nav-home, .nav-nextcs {
+  font-family: 'work sans', sans-serif;
+  font-size: 1em;
+  text-decoration: none;
+  color: #919191;
+  width: 20%;
+}
+
+.nav-nextcs {
+  text-align: right;
+}
+
+.nav-cs {
+  /* border: 1px solid red; */
+  margin: auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-cs a {
+  font-family: 'work sans', sans-serif;
+  font-size: 1em;
+  text-decoration: none;
+  color: #333333;
+}
+
+/*------- End of nav styling -------*/
 
 
 
-/*------- Start of about styling -------*/
+/*------- Start of pastwork styling -------*/
 
 
-.about {
+.pastwork {
   margin-bottom: 9em;
 }
 
@@ -227,18 +227,18 @@ header {
   text-align: center;
 }
 
-.about h3.
-.about h4 {
+.pastwork h3.
+.pastwork h4 {
   padding-top: 2em;
 }
 
-.about p {
+.pastwork p {
   margin-bottom: 2em;
 }
-.about h3,
-.about h4,
-.about p,
-.about .worklink {
+.pastwork h3,
+.pastwork h4,
+.pastwork p,
+.pastwork .worklink {
   max-width: 60%;
   margin-left: 20%;
 }
@@ -297,7 +297,7 @@ header {
 
 
 
-/*------- End of about styling -------*/
+/*------- End of pastwork styling -------*/
 
 
 
@@ -306,21 +306,6 @@ header {
   /* .container {
   border: 1px solid blue;
   } */
-  main {
-    margin: 0em 3em;
-  }
-  header {
-    /* border: 1px solid red; */
-    margin-top: 3em;
-  }
-  .ralogo {
-    background: url(../assets/homepage/ralogo36.svg) center / cover;
-    height: 36px;
-    width: 57px;
-  }
-  .hero-content {
-    margin: 3em 0em;
-  }
 }
 
 /* redzone */
@@ -331,28 +316,13 @@ header {
   main {
     margin: 0em 3em;
   }
-  .menu a {
-    font-weight: 500;
-  }
-  header {
-    /* border: 1px solid red; */
-    margin-top: 3em;
-  }
-  nav {
-    margin-top: 1.5em;
-  }
-  .ralogo {
-    background: url(../assets/homepage/ralogo36.svg) center / cover;
-    height: 36px;
-    width: 57px;
-  }
   .hero-content {
     margin-top: 3em;
   }
-  .about h3,
-  .about h4,
-  .about p,
-  .about .worklink {
+  .pastwork h3,
+  .pastwork h4,
+  .pastwork p,
+  .pastwork .worklink {
     max-width: 70%;
     margin-left: 15%;
   }
@@ -374,30 +344,30 @@ header {
   main {
     margin: 0em 1.5em;
   }
-  .menu a {
-    font-weight: 500;
-  }
-  header {
-    /* border: 1px solid red; */
-    margin-top: 3em;
-  }
-  nav {
+  .hero-content {
     margin-top: 1.5em;
   }
-  .ralogo {
-    background: url(../assets/homepage/ralogo24.svg) center / cover;
-    height: 36px;
-    width: 57px;
-    /* height: 24px;
-    width: 38px; */
+  nav {
+    height: 3em;
   }
-  .hero-content {
-    margin: 2em 0em;
+  .nav-cs {
+    display: none;
   }
-  .about h3,
-  .about h4,
-  .about p,
-  .about .worklink {
+  .nav-home, .nav-nextcs {
+    width: 50%;
+    font-size: 0.75em;
+  }
+  .cs-info {
+      margin-top: 3em;
+      margin-left: 0em;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+  .pastwork h3,
+  .pastwork h4,
+  .pastwork p,
+  .pastwork .worklink {
     max-width: 90%;   /*Controls margins*/
     margin-left: 5%;
   }
@@ -406,7 +376,7 @@ header {
     margin-top: 6em;
     margin-bottom: 4em;
   }
-  .about h2 {
+  .pastwork h2 {
     font-size: 2em;
   }
   .img-incontain1 {
@@ -420,41 +390,25 @@ header {
   border: 1px solid purple;
   } */
   main {
-    margin: 0em 1.5em;
+    margin: 0em 1em;
   }
-  .menu a {
-    font-weight: 500;
-  }
-  header {
-    margin-top: 2em;
-  }
-  nav {   /* Modified from 450-574px */
-    margin-top: 1.5em;
-    width: 14em;
-  }
-  .nav-main {   /* Modified from 450-574px */
-    line-height: 1.5em;
-  }
-  .menu a {   /* Modified from 450-574px */
-    font-size: 0.75em;
-  }
-  .ralogo {
-    background: url(../assets/homepage/ralogo24.svg) center / cover;
-    height: 36px;
-    width: 57px;
-    /* background: url(../assets/homepage/ralogo24.svg) center / cover;
-    height: 24px;
-    width: 38px; */
-  }
-
-  .hero-content {    /* Modified from 450-574px */
+  .hero-content {
     margin-top: 1em;
   }
-
-  .about h3,
-  .about h4,
-  .about p,
-  .about .worklink {
+  nav {
+    height: 3em;
+  }
+  .nav-cs {
+    display: none;
+  }
+  .nav-home, .nav-nextcs {
+    width: 50%;
+    font-size: 0.75em;
+  }
+  .pastwork h3,
+  .pastwork h4,
+  .pastwork p,
+  .pastwork .worklink {
     max-width: 90%;   /*Controls margins*/
     margin-left: 5%;
   }
@@ -463,21 +417,21 @@ header {
     margin-top: 6em;
     margin-bottom: 4em;
   }
-  .about h3 {
+  .pastwork h3 {
     font-family: 'spectral', serif;
    font-size: 1.4375em;
    line-height: 1.5em;
    margin-top: 1.04347826em;
    margin-bottom: 0em;
   }
-  .about h4 {
+  .pastwork h4 {
     font-family: 'spectral', serif;
     font-size: 1em;
     line-height: 1.5em;
     margin-top: 1.5em;
     margin-bottom: 0em;
   }
-  .about h2 {
+  .pastwork h2 {
     font-size: 2em;
   }
   .img-incontain1 {
