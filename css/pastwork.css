@@ -108,7 +108,6 @@ p {
 .hero-content {
   /* border: 1px solid grey; */
   margin-top: 4.5em;
-  background-color: #FAFAFA;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 0.5%;
@@ -143,11 +142,34 @@ p {
   grid-column: 1 / 9;
 }
 
+.hero-twothirdswidth-right {
+  grid-column: 5 / -1;
+}
+
 .hero-onethirdwidth-right {
   grid-column: 9 / -1;
 }
 
+.hero-onethirdwidth-left {
+  grid-column: 1 / 5;
+}
+
+.img-contain3 {
+  display: flex;
+  flex-direction: row;    /*adjust to 'column' for vertical layout*/
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0em;
+}
+
+.img-incontain3 {
+  margin: auto;
+  width: 30%;
+  display: inline;
+}
+
 /*------- End of hero content styling -------*/
+
 
 
 
@@ -162,7 +184,7 @@ nav {
 
 .nav-home, .nav-nextcs {
   font-family: 'work sans', sans-serif;
-  font-size: 1em;
+  font-size: 0.75em;
   text-decoration: none;
   color: #919191;
   width: 20%;
@@ -170,14 +192,6 @@ nav {
 
 .nav-nextcs {
   text-align: right;
-}
-
-.nav-cs {
-  /* border: 1px solid red; */
-  margin: auto;
-  width: 60%;
-  display: flex;
-  justify-content: space-between;
 }
 
 .nav-cs a {
@@ -206,10 +220,11 @@ nav {
 
 .page-separator {
   margin: auto;
-  width: 5em;
+  width: 3em;
   height: 1px;
   background-color: #DA9218;
-  margin-top: 3em;
+  margin-top: 6em;
+  margin-bottom: 6em;
 }
 
 .section-separator {
