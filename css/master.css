@@ -53,7 +53,7 @@ h3 {
 }
 
 h4 {
-   font-family: 'spectral', serif;
+  font-family: 'spectral', serif;
   font-size: 1.4375em;
   line-height: 1.5em;
   margin-top: 1.04347826em;
@@ -236,15 +236,18 @@ header {
 .worklink {
   display: inline-block;
   margin: 1.5em 0em;
-  color: #333333;
+  color: #777777;
   font-size: 1em;
+  text-transform: uppercase;
   font-family: 'work sans', sans-serif;
+  font-weight: 400;
   text-decoration: none;
   line-height: 1.5em;
   border-bottom: 1px solid #C5C5C5;
 }
 
 .worklink:hover {
+  color: #333333;
   border-bottom: 1px solid #DA9218;
 }
 
@@ -303,7 +306,8 @@ header {
 
 /* End of Past Work Styling */
 
-/* Start of Footer Styling */
+
+/* ------Start of Footer Styling------ */
 
 .footer-container {
   background-color: #F4F4F4;
@@ -332,11 +336,11 @@ footer {
 }
 
 .contactlinks {
-    /* border: 1px solid black; */
-    width: 220px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2em;
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #DA9218;
 }
 
 .contact-link a {
@@ -346,34 +350,43 @@ footer {
   font-weight:500;
   text-decoration: none;
   padding-bottom: 0.25em;
-  border-bottom: 1px solid #C9C9C9;
 }
 
 .contact-link a:hover {
   color: #333333;
-  border-bottom: 1px solid #D9AB9E
 }
 
 .credit {
   text-align: center;
-  color: #DA9218;
-  /* font-family: 'spectral', serif; */
-  font-size: 0.9em;
+  color: #333333;
   font-weight: 400;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-bottom: 3em;
 }
-/* End of Footer Styling */
+/* ------End of Footer Styling------ */
 
 
+@media only screen and (min-width:1281px) {
 
+  /*--aligns pastwork links--*/
+  .pastwork-descandlink {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  /*--aligns pastwork links--*/
+
+}
 
 /*bluezone*/
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
 
-  .casestudy-scope {
-    display: none;
-  }
+  /* .container {
+  border: 1px solid blue;
+  } */
+
   main {
     margin: 0em 3em;
   }
@@ -424,9 +437,17 @@ footer {
     margin-top: 3em;
     margin-bottom: 0em;
   }
-  .section-pastwork a{
-    font-size: 1em;
+
+  /*--aligns pastwork links--*/
+  .pastwork-descandlink {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
   }
+  /*--aligns pastwork links--*/
+
   footer li {
     display: block;
   }
@@ -436,7 +457,7 @@ footer {
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
   .casestudy-scope {
-    display: none;
+    font-size: 0.8em;
   }
   main {
     margin: 0em 3em;
@@ -522,7 +543,7 @@ footer {
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
   .casestudy-scope {
-    display: none;
+    font-size: 0.8em;
   }
   main {
     margin: 0em 1.5em;
@@ -626,7 +647,7 @@ footer {
 @media only screen and (min-width: 280px) and (max-width: 479px) {
 
   .casestudy-scope {
-    display: none;
+    font-size: 0.8em;
   }
 
   .section-work {   /* Controls spacing above first casestudy*/
@@ -672,11 +693,11 @@ footer {
     margin-bottom: 0em;
   }
   /* .hero-three h4, {
-    font-family: 'spectral', serif;
-    font-size: 1em;
-    line-height: 1.5em;
-    margin-top: 1.5em;
-    margin-bottom: 0em;
+  font-family: 'spectral', serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 0em;
   } */
   .work-description h3{
     font-family: 'spectral', serif;
@@ -739,7 +760,7 @@ footer {
     margin-bottom: 2em;
   }
   .email {
-   font-size: 1.3em;
+    font-size: 1.3em;
   }
 
 }

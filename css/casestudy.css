@@ -54,7 +54,7 @@ h3 {
 }
 
 h4 {
-   \font-family: 'spectral', serif;
+  \font-family: 'spectral', serif;
   font-size: 1.4375em;
   line-height: 1.5em;
   margin-top: 1.04347826em;
@@ -175,12 +175,12 @@ nav {
 
 
 .cs-info {
-    margin-top: 6em;
-    width: 80%;
-    margin-left: 10%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  margin-top: 6em;
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .cs-info-roles,
@@ -292,6 +292,64 @@ nav {
 
 /*------- End of casestudy styling -------*/
 
+/* ------Start of Footer Styling------ */
+
+.footer-container {
+  background-color: #F4F4F4;
+}
+
+footer {
+  /* border: 1px solid black; */
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0em 4em;
+}
+
+.footer-separator {
+  margin: auto;
+  width: 16em;
+  height: 1px;
+  background-color: #DA9218;
+  margin-top: 0.75em;  /*Controls distance to section-title*/
+}
+
+.email {
+  padding-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.contactlinks {
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #DA9218;
+}
+
+.contact-link a {
+  color: #777777;
+  font-family: 'work sans', sans-serif;
+  font-size: 0.85em;
+  font-weight:500;
+  text-decoration: none;
+  padding-bottom: 0.25em;
+}
+
+.contact-link a:hover {
+  color: #333333;
+}
+
+.credit {
+  text-align: center;
+  color: #333333;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 3em;
+}
+/* ------End of Footer Styling------ */
+
 
 
 /* bluezone */
@@ -304,7 +362,7 @@ nav {
 /* redzone */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   /* .container {
-    border: 1px solid red;
+  border: 1px solid red;
   } */
   main {
     margin: 0em 3em;
@@ -375,11 +433,11 @@ nav {
     font-size: 0.75em;
   }
   .cs-info {
-      margin-top: 3em;
-      margin-left: 0em;
-      width: 100%;
-      flex-direction: row;
-      justify-content: space-around;
+    margin-top: 3em;
+    margin-left: 0em;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
   }
   .cs-info-roles,
   .cs-info-deliverables,
@@ -453,10 +511,10 @@ nav {
   }
   .cs-info {
     margin: auto;
-      margin-top: 3em;
-      width: 60%;
-      flex-direction: column;
-      justify-content: space-between;
+    margin-top: 3em;
+    width: 60%;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .cs-info-roles,
   .cs-info-deliverables,
@@ -477,10 +535,10 @@ nav {
   }
   .casestudy h3 {
     font-family: 'spectral', serif;
-   font-size: 1.4375em;
-   line-height: 1.5em;
-   margin-top: 1.04347826em;
-   margin-bottom: 0em;
+    font-size: 1.4375em;
+    line-height: 1.5em;
+    margin-top: 1.04347826em;
+    margin-bottom: 0em;
   }
   .casestudy h4 {
     font-family: 'spectral', serif;

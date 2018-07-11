@@ -54,7 +54,7 @@ h3 {
 }
 
 h4 {
-   \font-family: 'spectral', serif;
+  \font-family: 'spectral', serif;
   font-size: 1.4375em;
   line-height: 1.5em;
   margin-top: 1.04347826em;
@@ -147,8 +147,25 @@ header {
   margin-bottom: 1em;
 }
 
+.about-links {
+  text-decoration: none;
+  font-family: 'work sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  color: #777777;
+  border-bottom: 1px solid #C9C9C9;
+  margin: 0em 0.25em;
+}
+
+.about-links:hover {
+  color: #333333;
+  border-bottom: 1px solid #DA9218;
+}
+
 /*------- End of logo and nav styling -------*/
 
+
+/*------- Start of hero styling -------*/
 .hero-content {
   /* border: 1px solid grey; */
   background-color: #FAFAFA;
@@ -157,8 +174,6 @@ header {
   grid-gap: 0.5%;
   margin-top: 4em;
 }
-
-/*------- End of logo and nav styling -------*/
 
 .hero-left {
   /* border: 1px solid grey; */
@@ -183,15 +198,14 @@ header {
 .hero-small {
   width: 100%;
 }
-
-/*------- End of header content styling -------*/
-
+/*------- End of hero styling -------*/
 
 
 
 
 
-/*------- Start of about styling -------*/
+
+/*------- Start of about container styling -------*/
 
 
 .about {
@@ -268,36 +282,90 @@ header {
 
 
 /* .img-contain4 {
-  padding-left: 1.5%;
-  margin: 4em 0em;
+padding-left: 1.5%;
+margin: 4em 0em;
 }
 
 .img-incontain4 {
-  margin: auto;
-  width: 49%;
-  display: inline;
+margin: auto;
+width: 49%;
+display: inline;
 }
 
 .img-contain2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 4em 0em;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin: 4em 0em;
 }
 
 .img-incontain2 {
-  margin: auto;
-  width: 49%;
-  display: inline;
+margin: auto;
+width: 49%;
+display: inline;
 } */
 
+/*------- End of about container styling -------*/
 
+/* ------Start of Footer Styling------ */
 
+.footer-container {
+  background-color: #F4F4F4;
+}
 
+footer {
+  /* border: 1px solid black; */
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0em 4em;
+}
 
+.footer-separator {
+  margin: auto;
+  width: 16em;
+  height: 1px;
+  background-color: #DA9218;
+  margin-top: 0.75em;  /*Controls distance to section-title*/
+}
 
-/*------- End of about styling -------*/
+.email {
+  padding-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.contactlinks {
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #DA9218;
+}
+
+.contact-link a {
+  color: #777777;
+  font-family: 'work sans', sans-serif;
+  font-size: 0.85em;
+  font-weight:500;
+  text-decoration: none;
+  padding-bottom: 0.25em;
+}
+
+.contact-link a:hover {
+  color: #333333;
+}
+
+.credit {
+  text-align: center;
+  color: #333333;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 3em;
+}
+/* ------End of Footer Styling------ */
+
 
 
 
@@ -326,7 +394,7 @@ header {
 /* redzone */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   /* .container {
-    border: 1px solid red;
+  border: 1px solid red;
   } */
   main {
     margin: 0em 3em;
@@ -465,10 +533,10 @@ header {
   }
   .about h3 {
     font-family: 'spectral', serif;
-   font-size: 1.4375em;
-   line-height: 1.5em;
-   margin-top: 1.04347826em;
-   margin-bottom: 0em;
+    font-size: 1.4375em;
+    line-height: 1.5em;
+    margin-top: 1.04347826em;
+    margin-bottom: 0em;
   }
   .about h4 {
     font-family: 'spectral', serif;
