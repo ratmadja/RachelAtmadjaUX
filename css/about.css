@@ -436,6 +436,7 @@ footer {
 
 /* greenzone */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+
   /* .container {
   border: 1px solid green;
   } */
@@ -474,11 +475,11 @@ footer {
     margin-top: 6em;
     margin-bottom: 4em;
   }
-  .about h2 {
-    font-size: 2em;
-  }
   .img-incontain1 {
     width: 90%;
+  }
+  .centered-title {
+    margin-top: 1em;
   }
 }
 
@@ -550,5 +551,8 @@ footer {
   }
   .img-incontain1 {
     width: 90%;
+  }
+  .centered-title {
+    margin-top: 1em;
   }
 }
