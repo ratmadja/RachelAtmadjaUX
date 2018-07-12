@@ -262,6 +262,8 @@ header {
   padding-bottom: 1em;
 }
 
+.pullquotes span {}
+
 .img-fullwidth {
   width: 100%;
   display: block;
