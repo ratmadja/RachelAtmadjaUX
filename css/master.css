@@ -137,8 +137,12 @@ header {
   margin-bottom: 1em;
 }
 
-
 /*------- End of logo and nav styling -------*/
+
+
+
+
+/*------- Start of hero styling -------*/
 
 .hero-image {
   /* border: 1px solid #c3c3c3; */
@@ -152,8 +156,6 @@ header {
   grid-column: 1 / -1;
   height: auto;
 }
-
-
 
 .hero-two {
   grid-column: 1 / 4;
@@ -176,11 +178,11 @@ header {
   margin-top: 1em;
 }
 
-/* End of header styling */
+/*------- End of hero styling -------*/
 
 
 
-/* Start of main styling */
+/*------- Start of container styling -------*/
 
 .section-title {
   margin: auto;
@@ -196,10 +198,8 @@ header {
   margin-top: 2em;  /*Controls distance to section-title*/
 }
 
-/* End of main styling */
 
 /* Start of WORK Styling */
-
 
 .section-work {
   /* border: 1px solid grey; */
@@ -379,10 +379,7 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
   }
-/*--aligns pastwork links--*/
-
-
-
+}
 
 /*bluezone*/
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
@@ -566,8 +563,6 @@ footer {
     background: url(../assets/homepage/ralogo24.svg) center / cover;
     height: 36px;
     width: 57px;
-    /* height: 24px;
-    width: 38px; */
   }
   .hero-image {
     margin: 1em 0em;
