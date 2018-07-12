@@ -379,9 +379,10 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
   }
-  /*--aligns pastwork links--*/
+/*--aligns pastwork links--*/
 
-}
+
+
 
 /*bluezone*/
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
